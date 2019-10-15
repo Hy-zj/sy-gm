@@ -93,31 +93,32 @@ export default {
        }
 
       ],
-      oneList: [],
-      twoList: []
+      // oneList: [],
+      // twoList: []
     }
   },
   computed: {
-    oneList () {
-      this.homePbList.forEach(((item,index)=>{
-        if(item[index].id%2==1){
-          this.oneList.push(item[index])
-        }
-      }))
-      return this.oneList
-    },
-    twoList () {
-      this.homePbList.forEach(((item,index)=>{
-        if(item[index].id%2==0){
-          this.twoList.push(item[index])
-        }
-      }))
-      return this.twoList
-    }
-  },
+  //   oneList () {
+  //     this.homePbList.forEach(((item,index)=>{
+  //       if(item[index].id%2==1){
+  //         this.oneList.push(item[index])
+  //       }
+  //     }))
+  //     return this.oneList
+  //   },
+  //   twoList () {
+  //     this.homePbList.forEach(((item,index)=>{
+  //       if(item[index].id%2==0){
+  //         this.twoList.push(item[index])
+  //       }
+  //     }))
+  //     return this.twoList
+  //   }
+   },
+  
   created(){
-    oneList();
-    twoList()
+    // oneList();
+    // twoList()
   }
 };
 </script>
