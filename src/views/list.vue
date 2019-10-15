@@ -12,6 +12,10 @@
 import Vue from "vue";
 import { Icon } from "vant";
 
+export default {
+  name: 'list'
+}
+</script>
 
 Vue.use(Icon);
 export default {

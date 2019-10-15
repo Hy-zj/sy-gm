@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my">
     <div class="header">
       <a href>
         <van-icon name="arrow-left" class="arrow-left" />
@@ -123,8 +123,12 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #fff;
 }
-
+.my{
+  width: 100vw;
+  height: 100vh;
+}
 .header {
   width: 100%;
   height: 44px;
@@ -260,6 +264,7 @@ export default {
   font-size: 15px;
   text-align: left;
   margin-left: 8px;
+  
 }
 .message_login .icon_msg {
   display: block;
