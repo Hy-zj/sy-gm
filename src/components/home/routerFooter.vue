@@ -17,12 +17,10 @@
       </router-link>
     </div>
     <div class="router-wrap-tree">
-      <router-link to="/goodSelect" tag="span">
-        <div class="router-wrap-img">
+      <a href=""><div class="router-wrap-img">
           <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="router-wrap-desc" style="color: #999">优选</div>
-      </router-link>
+        <div class="router-wrap-desc" style="color: #999">优选</div></a>
     </div>
     <div class="router-wrap-four">
       <router-link to="/cart" tag="span">

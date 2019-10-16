@@ -5,9 +5,13 @@ import VueAxios from 'vue-axios'
 
 Vue.use(VueAxios, axios)
 Vue.use(Vuex)
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {
-    itemObj: {}
+    itemObj: {},
+    loginObj: {
+      name: "huangyue",
+      password: "123456",
+    }
   },
   mutations: {
 insert(state){
@@ -23,3 +27,4 @@ insert(state){
     }
   }
 })
+export default store
