@@ -1,10 +1,10 @@
 <template>
-  <div class="cartHeader">
-    <div class="cartHeader-one" @click="change">
+  <div class="loginHeader">
+    <div class="loginHeader-one" @click="change">
       <van-icon name="arrow-left" />
     </div>
-    <div class="cartHeader-two">购物车</div>
-    <div class="cartHeader-tree"></div>
+    <div class="loginHeader-two">我的国美</div>
+    <div class="loginHeader-tree"></div>
   </div>
 </template>
 
@@ -14,30 +14,30 @@ import { Icon } from "vant";
 
 Vue.use(Icon);
 export default {
-  name: "cartHeader",
+  name: "loginHeader",
   methods: {
     change () {
-      this.$router.back()
+      this.$router.push('/home')
     }
   }
 };
 </script>
 
 <style>
-.cartHeader {
+.loginHeader {
   width: 351px;
   height: 44px;
   margin: 0 12px;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
 }
-.cartHeader-one {
+.loginHeader-one {
   width: 35.5px;
   line-height: 44px;
   text-align: center;
 }
-.cartHeader-two {
-  width: 54px;
+.loginHeader-two {
+  width: 79px;
   line-height: 44px;
   font-size: 18px;
   color: #333;

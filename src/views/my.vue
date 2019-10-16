@@ -10,20 +10,37 @@
         <img src="https://misc.gomein.net.cn/plus/images/u/login/logo_xh.png?v=20190624" alt />
       </div>
       <div>
-        <van-tabs v-model="active" class="my-tab_title_container" line-width="145px" color="#F20C59">
+        <van-tabs
+          v-model="active"
+          class="my-tab_title_container"
+          line-width="145px"
+          color="#F20C59"
+        >
           <van-tab class="my-tab_title">
             <template v-slot:title>
-              <span>账号密码登录</span>
+              <div>
+                <span>账号密码登录</span>
+              </div>
             </template>
             <div class="my-account_login">
               <div class="my-user">
                 <span class="my-icon_user"></span>
-                <input type="text" id="username" placeholder="手机号/邮箱/用户名/门店会员卡号" />
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="手机号/邮箱/用户名/门店会员卡号"
+                  v-model="$store.state.loginObj.name"
+                />
                 <span class="my-icon_clear"></span>
               </div>
               <div class="my-pwd">
                 <span class="my-icon_password"></span>
-                <input type="password" placeholder="请输入密码" />
+                <input
+                  type="password"
+                  placeholder="请输入密码"
+                  v-model="$store.state.loginObj.password"
+                  @input="change"
+                />
                 <span class="my-icon_seen"></span>
               </div>
               <div class="my-account-operation">
@@ -31,13 +48,15 @@
                 <a href="https://m.gome.com.cn/find_password.html">找回密码</a>
               </div>
               <div class="my-login_btn">
-                <button class="my-btn">登录</button>
+                <button class="my-btn" @click="login">登录</button>
               </div>
             </div>
           </van-tab>
           <van-tab class="my-tab_title">
             <template v-slot:title>
-              <span>短信验证码登录</span>
+              <div>
+                <span>短信验证码登录</span>
+              </div>
             </template>
             <div class="my-message_login">
               <div class="my-tel">
@@ -109,17 +128,36 @@ export default {
   data() {
     return {
       active: 2
-     
     };
   },
   methods: {
-    
+    change() {
+      console.log(window.document.getElementsByClassName("my-btn"));
+      var vant = window.document.getElementsByClassName("my-btn")[0];
+      vant.style.cssText = "background-color: red;color: #333;";
+    },
+    login() {
+      if (
+        this.$store.state.loginObj.name &&
+        this.$store.state.loginObj.password
+      ) {
+        this.$router.push("/loginMy");
+        (this.$store.state.loginObj.name = ""),
+          (this.$store.state.loginObj.password = "");
+      }
+    }
   }
 };
 </script>
 
 <style>
-.my{
+.active {
+  color: #f20c59;
+}
+.text-danger {
+  color: black;
+}
+.my {
   width: 100vw;
   height: 100vh;
 }
@@ -258,7 +296,6 @@ export default {
   font-size: 15px;
   text-align: left;
   margin-left: 8px;
-  
 }
 .my-message_login .my-icon_msg {
   display: block;

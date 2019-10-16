@@ -16,4 +16,7 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+}
 </style>
