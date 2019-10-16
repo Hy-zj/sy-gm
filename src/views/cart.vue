@@ -1,10 +1,16 @@
 <template>
-  <div></div>
+  <div>
+    <cartHeader></cartHeader>
+  </div>
 </template>
 
 <script>
+import cartHeader from '../components/cart/cartHeader'
 export default {
-  name: 'cart'
+  name: 'cart',
+  components: {
+    cartHeader
+  }
 }
 </script>
 
