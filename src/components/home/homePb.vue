@@ -127,7 +127,7 @@ export default {
 .homePb {
   width: 351px;
   height: 100%;
-  margin: 15px auto;
+  margin: 15px 15px;
   border: 1px solid #f2f2f2;
   display: flex;
   border-radius: 8px;

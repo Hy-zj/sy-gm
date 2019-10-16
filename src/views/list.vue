@@ -27,7 +27,7 @@ export default {
       items: [{ text: "分组 1" }, { text: "分组 2" }]
     };
   },
-  mounted () {
+  created () {
     this.getData()
   },
   methods: {

@@ -32,7 +32,7 @@ export default {
 .homeJx {
   width: 351px;
   height: 175.66px;
-  margin: 0 auto;
+  margin: 0 15px;
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
@@ -66,26 +66,26 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.homeJx-item1{
+.homeJx-item1 {
   width: 175px;
   height: 33.95px;
   color: #000;
   font-size: 14px;
   padding: 12px 0 0 12px;
 }
-.homeJx-item2{
+.homeJx-item2 {
   width: 175px;
   height: 27.58px;
   font-size: 12px;
   color: #666;
   padding: 2.4px 0 8px 12px;
 }
-.homeJx-item3{
+.homeJx-item3 {
   width: 175px;
   height: 70.98px;
   overflow: hidden;
 }
-.homeJx-item3 img{
+.homeJx-item3 img {
   width: 100%;
   height: 100%;
 }

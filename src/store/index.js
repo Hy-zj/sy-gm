@@ -16,7 +16,7 @@ const store = new Vuex.Store({
   mutations: {
 insert(state){
   Vue.axios.get('/data/list-tab-title.json').then((response)=>{
-    console.log(response)
+    // console.log(response)
     state.itemObj=response;
   })
 }
