@@ -11,10 +11,13 @@
         <input type="text" value="华为Mate 30新品上市" />
       </div>
       <div class="Navigation-idx-tree">
+        <router-link to="/cart">
         <div class="Navigation-idx-tree-left">
           <img src="//css.gomein.net.cn/plus/style/index/images/grass_cart.png?v=2017092001" alt />
         </div>
-        <div class="Navigation-idx-tree-right">登录</div>
+        </router-link>
+       <router-link to="/my">
+        <div class="Navigation-idx-tree-right">登录</div></router-link>
       </div>
     </div>
   </div>

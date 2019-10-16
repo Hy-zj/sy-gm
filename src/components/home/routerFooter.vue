@@ -17,7 +17,7 @@
       </router-link>
     </div>
     <div class="router-wrap-tree">
-      <a href=""><div class="router-wrap-img">
+      <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201909/26/saleJ8gDXKVNgH3.html"><div class="router-wrap-img">
           <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt />
         </div>
         <div class="router-wrap-desc" style="color: #999">优选</div></a>

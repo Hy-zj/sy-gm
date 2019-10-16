@@ -4,19 +4,17 @@
   </div>
 </template>
 <script>
-
 export default {
-  name: 'app'
-  
-}
+  name: "app"
+};
 </script>
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
 </style>
