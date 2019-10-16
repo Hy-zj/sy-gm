@@ -1,23 +1,23 @@
 <template>
   <div class="homePb">
-    <div class="homePb-img">
-      <img src="//gfs10.gomein.net.cn/wireless/T1Go_jBjD_1RCvBVdK_1065_129.png" alt />
+    <div class="homePb-homePb-img">
+      <img src="//gfs10.gomein.net.cn/wireless/T1Go_jBjD_1RCvBVdK_1065_129.png" />
     </div>
-    <div class="homePb-list">
+    <div class="homePb-homePb-list">
       <ul>
-        <li class="item1" v-for="item in homePbList" :key="item.id">
-          <div class="list-item">
-            <img :src="item.imgurl" alt />
+        <li class="homePb-item1" v-for="item in homePbList" :key="item.id">
+          <div class="homePb-list-item">
+            <img :src="item.imgurl"/>
           </div>
-          <div class="desc">
-            <span class="tag">自营</span>
+          <div class="homePb-desc">
+            <span class="homePb-tag">自营</span>
             {{item.desc}}
           </div>
-          <div class="icon">劵1000减20</div>
-          <div class="icon1">节约能耗</div>
-          <div class="pic">
-            <span class="item1">{{item.pick}}</span>
-            <span class="item2">看相似</span>
+          <div class="homePb-icon">劵1000减20</div>
+          <div class="homePb-icon1">节约能耗</div>
+          <div class="homePb-pic">
+            <span class="homePb-item1">{{item.pick}}</span>
+            <span class="homePb-item2">看相似</span>
           </div>
         </li>
       </ul>
@@ -123,7 +123,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .homePb {
   width: 351px;
   height: 100%;
@@ -133,16 +133,16 @@ export default {
   border-radius: 8px;
   flex-direction: column;
 }
-.homePb-img {
+.homePb-homePb-img {
   width: 351px;
   height: 42.5px;
   margin-top: 5px;
 }
-.homePb-img img {
+.homePb-homePb-img img {
   width: 100%;
   height: 100%;
 }
-.homePb-list {
+.homePb-homePb-list {
   width: 375px;
   height: 100%;
   overflow: hidden;
@@ -150,7 +150,6 @@ export default {
 ul {
   width: 351px;
   height: 100%;
-  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
@@ -168,15 +167,15 @@ ul li {
   background: white;
   margin: 2px 2px 0 0;
 }
-.list-item {
+.homePb-list-item {
   width: 173px;
   height: 173px;
 }
-.list-item img {
+.homePb-list-item img {
   width: 100%;
   height: 100%;
 }
-.desc {
+.homePb-desc {
   width: 173px;
   height: 36px;
   margin: 0 0 9.6px;
@@ -185,7 +184,7 @@ ul li {
   overflow: hidden;
   font-size: 12px;
 }
-.tag {
+.homePb-tag {
   width: 30.78px;
   height: 18.38px;
   margin: 0 6px 0 0;
@@ -195,7 +194,7 @@ ul li {
   border: 1px solid #fd0175;
   border-radius: 3px;
 }
-.icon {
+.homePb-icon {
   width: 73.02px;
   line-height: 13.98px;
   color: #fff;
@@ -207,7 +206,7 @@ ul li {
   vertical-align: middle;
   font-size: 12px;
 }
-.icon1 {
+.homePb-icon1 {
   width: 54.78px;
   line-height: 13.98px;
   border: 1px solid #2aa80d;
@@ -220,12 +219,12 @@ ul li {
   vertical-align: middle;
   font-size: 12px;
 }
-.pic{
+.homePb-pic{
   width: 173px;
   display: flex;
   padding-bottom: 10px;
 }
-.pic .item1{
+.homePb-pic .homePb-item1{
   width: 149px;
   height: 21px;
   display: block;
@@ -233,7 +232,7 @@ ul li {
   color: #f20c59;
   margin-left: 10px;
 }
-.pic .item2{
+.homePb-pic .homePb-item2{
     padding: 0;
     text-align: center;
     border: 1px solid #e6e6e6;

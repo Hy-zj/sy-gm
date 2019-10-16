@@ -1,28 +1,28 @@
 <template>
   <div class="homeDt">
-    <div class="homeDt-left">
-      <div class="homeDt-left-title">
+    <div class="homeDt-homeDt-left">
+      <div class="homeDt-homeDt-left-title">
         <img src="//gfs13.gomein.net.cn/wireless/T1yEhbB7J_1RCvBVdK_120_28.png" alt />
       </div>
     </div>
-    <div class="homeDt-right">
-      <van-swipe :show-indicators="false" style="height: 36px;" :autoplay="1000" vertical>
+    <div class="homeDt-homeDt-right">
+      <van-swipe :show-indicators="false"  style="height: 36px;" :autoplay="1000" vertical>
         <van-swipe-item>
-          <div class="right-one">
-            <span class="icon">国美黄金</span>
-            <span class="icon1">投资金条 优惠购金</span>
+          <div class="homeDt-right-one">
+            <span class="homeDt-icon">国美黄金</span>
+            <span class="homeDt-icon1">投资金条 优惠购金</span>
           </div>
         </van-swipe-item>
         <van-swipe-item>
-          <div class="right-one">
-            <span class="icon">金秋收季节</span>
-            <span class="icon1">套购0元的配件</span>
+          <div class="homeDt-right-one">
+            <span class="homeDt-icon">金秋收季节</span>
+            <span class="homeDt-icon1">套购0元的配件</span>
           </div>
         </van-swipe-item>
         <van-swipe-item>
-          <div class="right-one">
-            <span class="icon">冰箱洗衣机</span>
-            <span class="icon1">套购7.5折起</span>
+          <div class="homeDt-right-one">
+            <span class="homeDt-icon">冰箱洗衣机</span>
+            <span class="homeDt-icon1">套购7.5折起</span>
           </div>
         </van-swipe-item>
       </van-swipe>
@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .homeDt {
   width: 351px;
   height: 51.38px;
@@ -54,32 +54,32 @@ export default {
   display: flex;
   align-items: center;
 }
-.homeDt-left {
+.homeDt-homeDt-left {
   width: 95.78px;
   line-height: 36px;
   margin-left: 10px;
   border-right: 1px solid #f2f2f2;
 }
-.homeDt-left-title {
+.homeDt-homeDt-left-title {
   width: 77px;
   line-height: 18px;
 }
-.homeDt-left-title img {
+.homeDt-homeDt-left-title img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.homeDt-right {
+.homeDt-homeDt-right {
   width: 260px;
   height: 36px;
   margin-bottom: 5px;
 }
-.right-one {
+.homeDt-right-one {
   line-height: 36px;
   margin-bottom: 10px;
   padding-left: 20px;
 }
-.icon {
+.homeDt-icon {
   width: 61.79px;
   line-height: 20px;
   font-size: 12px;
@@ -89,7 +89,7 @@ export default {
   border: 1px solid #ffbce7;
   border-radius: 5px;
 }
-.icon1 {
+.homeDt-icon1 {
   line-height: 18px;
   font-size: 13px;
   color: #666;

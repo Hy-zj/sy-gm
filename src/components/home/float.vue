@@ -1,6 +1,8 @@
 <template>
-  <div class="float">
+  <div>
+    <div class="home-float">
     <img src="//gfs10.gomein.net.cn/T14CCyBjKv1RCvBVdK.gif" alt="">
+  </div>
   </div>
 </template>
 
@@ -11,14 +13,14 @@ export default {
 </script>
 
 <style scoped>
-  .float{
+  .home-float{
     position: fixed;
     right: 0;
     top: 60%;
     width: 60px;
     height: 60px;
   }
-  .float img{
+  .home-float img{
     width: 100%;
     height: 100%;
   }

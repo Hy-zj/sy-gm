@@ -1,53 +1,43 @@
 <template>
-  <div class="wrap">
-    <div class="wrap-one">
+  <div class="router-wrap">
+    <div class="router-wrap-one">
       <router-link to="/home" tag="span">
-        <div class="wrap-img">
-          <img src="//gfs10.gomein.net.cn/wireless/T1JuEXBm_v1RCvBVdK_48_48.png" alt="">
+        <div class="router-wrap-img">
+          <img src="//gfs10.gomein.net.cn/wireless/T1JuEXBm_v1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="wrap-desc">
-            首页
-          </div>
+        <div class="router-wrap-desc">首页</div>
       </router-link>
     </div>
-    <div class="wrap-two">
+    <div class="router-wrap-two">
       <router-link to="/list" tag="span">
-      <div class="wrap-img">
-          <img src="//gfs11.gomein.net.cn/wireless/T1SudXB7CT1RCvBVdK_48_48.png" alt="">
+        <div class="router-wrap-img">
+          <img src="//gfs11.gomein.net.cn/wireless/T1SudXB7CT1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="wrap-desc" style="color: #999">
-            分类
-          </div>
+        <div class="router-wrap-desc" style="color: #999">分类</div>
       </router-link>
-      </div>
-    <div class="wrap-tree">
+    </div>
+    <div class="router-wrap-tree">
       <router-link to="/goodSelect" tag="span">
-      <div class="wrap-img">
-          <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt="">
+        <div class="router-wrap-img">
+          <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="wrap-desc" style="color: #999">
-            优选
-          </div>
+        <div class="router-wrap-desc" style="color: #999">优选</div>
       </router-link>
     </div>
-    <div class="wrap-four">
+    <div class="router-wrap-four">
       <router-link to="/cart" tag="span">
-      <div class="wrap-img">
-          <img src="//gfs13.gomein.net.cn/wireless/T1IiDXB4xT1RCvBVdK_48_48.png" alt="">
+        <div class="router-wrap-img">
+          <img src="//gfs13.gomein.net.cn/wireless/T1IiDXB4xT1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="wrap-desc" style="color: #999">
-            购物车
-          </div>
+        <div class="router-wrap-desc" style="color: #999">购物车</div>
       </router-link>
     </div>
-    <div class="wrap-five">
+    <div class="router-wrap-five">
       <router-link to="/my" tag="span">
-      <div class="wrap-img">
-          <img src="//gfs11.gomein.net.cn/wireless/T1.fdXBKZT1RCvBVdK_48_48.png" alt="">
+        <div class="router-wrap-img">
+          <img src="//gfs11.gomein.net.cn/wireless/T1.fdXBKZT1RCvBVdK_48_48.png" alt />
         </div>
-        <div class="wrap-desc" style="color: #999">
-            我的
-          </div>
+        <div class="router-wrap-desc" style="color: #999">我的</div>
       </router-link>
     </div>
   </div>
@@ -55,21 +45,25 @@
 
 <script>
 export default {
-  name: 'routerFooter'
+  name: "routerFooter"
 }
 </script>
 
-<style scoped>
-.wrap{
+<style>
+.router-wrap {
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 375px;
   height: 55px;
   display: flex;
   background: #fff;
   border-top: 1px solid #ffffff;
+   z-index: 10;
+  /* transform: translateZ(0);
+  overflow-y: auto; */
 }
-.wrap-one{
+.router-wrap-one {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -77,22 +71,22 @@ export default {
   align-items: center;
   flex-shrink: 0;
 }
-.wrap-img{
+.router-wrap-img {
   height: 28.8px;
   width: 28.8px;
 }
-.wrap-img img{
+.router-wrap-img img {
   width: 100%;
   height: 100%;
 }
-.wrap-desc{
+.router-wrap-desc {
   height: 18px;
   font-size: 12px;
   margin-top: 2px;
   color: red;
   text-decoration: none;
 }
-.wrap-two{
+.router-wrap-two {
   flex: 1;
   flex-shrink: 0;
   display: flex;
@@ -100,7 +94,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.wrap-tree{
+.router-wrap-tree {
   flex: 1;
   flex-shrink: 0;
   display: flex;
@@ -108,7 +102,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.wrap-four{
+.router-wrap-four {
   flex: 1;
   flex-shrink: 0;
   display: flex;
@@ -116,7 +110,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-.wrap-five{
+.router-wrap-five {
   flex: 1;
   flex-shrink: 0;
   display: flex;

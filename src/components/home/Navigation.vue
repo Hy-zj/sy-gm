@@ -1,20 +1,20 @@
 <template>
   <div class="Navigation">
-    <div class="idx-header">
-      <div class="idx-one">
-        <div class="idx-img">
+    <div class="Navigation-idx-header">
+      <div class="Navigation-idx-one">
+        <div class="Navigation-idx-img">
           <img src="//css.gomein.net.cn/plus/style/index/images/grass_logo.png?v=2017092001" alt />
         </div>
       </div>
-      <div class="idx-two">
-        <van-icon name="search" class="idx-icon" />
+      <div class="Navigation-idx-two">
+        <van-icon name="search" class="Navigation-idx-icon" />
         <input type="text" value="华为Mate 30新品上市" />
       </div>
-      <div class="idx-tree">
-        <div class="idx-tree-left">
+      <div class="Navigation-idx-tree">
+        <div class="Navigation-idx-tree-left">
           <img src="//css.gomein.net.cn/plus/style/index/images/grass_cart.png?v=2017092001" alt />
         </div>
-        <div class="idx-tree-right">登录</div>
+        <div class="Navigation-idx-tree-right">登录</div>
       </div>
     </div>
   </div>
@@ -35,11 +35,11 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
-  width: 100%;
+  z-index: 10;
+  width: 375px;
   height: 52.8px;
 }
-.idx-header {
+.Navigation-idx-header {
   width: 375px;
   height: 52.8px;
   padding-left: 10px;
@@ -47,21 +47,21 @@ export default {
   background: #fff;
   display: flex;
 }
-.idx-one {
+.Navigation-idx-one {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.idx-img{
+.Navigation-idx-img{
   width: 28.8px;
   height: 28.8px;
 }
-.idx-img img{
+.Navigation-idx-img img{
   width: 100%;
   height: 100%;
 }
-.idx-two {
+.Navigation-idx-two {
   flex: 4;
   display: flex;
   padding: 10px;
@@ -69,13 +69,13 @@ export default {
   align-items: center;
   position: relative;
 }
-.idx-icon{
+.Navigation-idx-icon{
   position: absolute;
   top: 18px;
   left: 20px;
   color: #666;
 }
-.idx-two input{
+.Navigation-idx-two input{
  flex: 1;
  border-radius: 16px;
  height: 34px;
@@ -86,21 +86,21 @@ export default {
  font-size: 12px;
  padding-left: 30px;
 }
-.idx-tree {
+.Navigation-idx-tree {
   flex: 1;
   display: flex;
   align-items: center;
 }
-.idx-tree-left{
+.Navigation-idx-tree-left{
   width: 26.39px;
   height: 23.39px;
 
 }
-.idx-tree-left img{
+.Navigation-idx-tree-left img{
   width: 100%;
   height: 100%;
 }
-.idx-tree-right{
+.Navigation-idx-tree-right{
   width: 40px;
   line-height: 50px;
   font-size: 14px;

@@ -16,9 +16,4 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-#app{
-  width: 100vw;
-  height: 3000px;
-  background: #f5f3f7;
-}
 </style>

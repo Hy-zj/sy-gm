@@ -118,13 +118,7 @@ export default {
 };
 </script>
 
-<style scoped>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #fff;
-}
+<style>
 .my{
   width: 100vw;
   height: 100vh;

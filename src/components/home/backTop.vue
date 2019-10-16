@@ -34,15 +34,15 @@ export default {
   align-items: center;
   right: 5px;
 }
-.backTop span{
+.backTop-backTop span{
   font-size: 12px;
 }
-.backTop div{
+.backTop-backTop div{
   width: 48px;
   line-height: 20px;
   text-align: center;
 }
-.backTop img {
+.backTop-backTop img {
   width: 100%;
   height: 100%;
 }

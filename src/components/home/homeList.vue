@@ -1,10 +1,10 @@
 <template>
   <div class="homeList">
-    <div v-for="item in homeList" :key="item.id" class="home-list">
-      <div class="home-img">
+    <div v-for="item in homeList" :key="item.id" class="homeList-home-list">
+      <div class="homeList-home-img">
         <img :src="item.imgurl" alt="">
       </div>
-      <div class="home-desc">{{item.desc}}</div>
+      <div class="homeList-home-desc">{{item.desc}}</div>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .homeList{
   width: 375px;
   height: 187px;
@@ -79,20 +79,20 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
-.home-list{
+.homeList-home-list{
   width: 20%;
   height: 20%;
 }
-.home-img{
+.homeList-home-img{
   width: 78px;
   height: 52px;
 }
-.home-img img{
+.homeList-home-img img{
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.home-desc{
+.homeList-home-desc{
   font-size: 12px;
   color: #333;
   text-align: center;
