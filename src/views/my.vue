@@ -1,64 +1,64 @@
 <template>
   <div class="my">
-    <div class="header">
+    <div class="my-header">
       <a href>
-        <van-icon name="arrow-left" class="arrow-left" />
+        <van-icon name="arrow-left" class="my-arrow-left" />
       </a>
     </div>
-    <div class="section">
-      <div class="logo">
+    <div class="my-section">
+      <div class="my-logo">
         <img src="https://misc.gomein.net.cn/plus/images/u/login/logo_xh.png?v=20190624" alt />
       </div>
       <div>
-        <van-tabs v-model="active" class="tab_title_container" line-width="145px" color="#F20C59">
-          <van-tab class="tab_title">
+        <van-tabs v-model="active" class="my-tab_title_container" line-width="145px" color="#F20C59">
+          <van-tab class="my-tab_title">
             <template v-slot:title>
               <span>账号密码登录</span>
             </template>
-            <div class="account_login">
-              <div class="user">
-                <span class="icon_user"></span>
+            <div class="my-account_login">
+              <div class="my-user">
+                <span class="my-icon_user"></span>
                 <input type="text" id="username" placeholder="手机号/邮箱/用户名/门店会员卡号" />
-                <span class="icon_clear"></span>
+                <span class="my-icon_clear"></span>
               </div>
-              <div class="pwd">
-                <span class="icon_password"></span>
+              <div class="my-pwd">
+                <span class="my-icon_password"></span>
                 <input type="password" placeholder="请输入密码" />
-                <span class="icon_seen"></span>
+                <span class="my-icon_seen"></span>
               </div>
-              <div class="account-operation">
+              <div class="my-account-operation">
                 <a href="https://reg.m.gome.com.cn/registered.html">手机号快速注册</a>
                 <a href="https://m.gome.com.cn/find_password.html">找回密码</a>
               </div>
-              <div class="login_btn">
-                <button class="btn">登录</button>
+              <div class="my-login_btn">
+                <button class="my-btn">登录</button>
               </div>
             </div>
           </van-tab>
-          <van-tab class="tab_title">
+          <van-tab class="my-tab_title">
             <template v-slot:title>
               <span>短信验证码登录</span>
             </template>
-            <div class="message_login">
-              <div class="tel">
-                <span class="icon_user"></span>
+            <div class="my-message_login">
+              <div class="my-tel">
+                <span class="my-icon_user"></span>
                 <input type="text" id="usertel" placeholder="手机号" />
               </div>
-              <div class="code_list">
-                <div class="pwd">
-                  <span class="icon_msg"></span>
-                  <div class="code_line">
+              <div class="my-code_list">
+                <div class="my-pwd">
+                  <span class="my-icon_msg"></span>
+                  <div class="my-code_line">
                     <input type="text" placeholder="请输入短信验证码" />
-                    <span class="icon_clear"></span>
+                    <span class="my-icon_clear"></span>
                   </div>
-                  <div class="get_code">获取验证码</div>
-                  <span class="bottom_line"></span>
+                  <div class="my-get_code">获取验证码</div>
+                  <span class="my-bottom_line"></span>
                 </div>
               </div>
-              <div class="login_btn">
-                <button class="btn">同意协议注册并登录</button>
+              <div class="my-login_btn">
+                <button class="my-btn">同意协议注册并登录</button>
               </div>
-              <span class="liscen">
+              <span class="my-liscen">
                 未注册手机登录成功将自动注册，且代表您已同意协议
                 <a
                   href="https://m.gome.com.cn/register_boder.html"
@@ -70,12 +70,12 @@
           </van-tab>
         </van-tabs>
       </div>
-      <div class="other">
-        <span class="line"></span>
-        <span class="txt">使用以下账户登录</span>
-        <span class="line"></span>
+      <div class="my-other">
+        <span class="my-line"></span>
+        <span class="my-txt">使用以下账户登录</span>
+        <span class="my-line"></span>
       </div>
-      <div class="other_login">
+      <div class="my-other_login">
         <a href="https://login.m.gome.com.cn/membership_card.html">
           <img src="https://misc.gomein.net.cn/plus/images/u/login_new/mdhy.png" alt />
           <span>门店会员</span>
@@ -123,58 +123,58 @@ export default {
   width: 100vw;
   height: 100vh;
 }
-.header {
+.my-header {
   width: 100%;
   height: 44px;
   line-height: 44px;
 }
-.header a {
+.my-header a {
   margin-left: 20px;
 }
-.header a .arrow-left {
+.my-header a .my-arrow-left {
   vertical-align: middle;
   font-size: 22px;
 }
-.section {
+.my-section {
   width: 290px;
   height: 545px;
   margin: 10px auto;
 }
-.section .logo {
+.my-section .my-logo {
   width: 148px;
   height: 45px;
   margin: 0 auto;
 }
-.section .logo img {
+.my-section .my-logo img {
   width: 100%;
   height: 100%;
 }
-.tab_title_container {
+.my-tab_title_container {
   width: 290px;
   text-align: center;
 }
-.tab_title {
+.my-tab_title {
   width: 145px;
   text-align: center;
 }
-.account_login {
+.my-account_login {
   width: 290px;
 }
-.account_login .user {
+.my-account_login .my-user {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0 8px;
   border-bottom: 1px solid #dedede;
 }
-.account_login .pwd {
+.my-account_login .my-pwd {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 0 8px;
   border-bottom: 1px solid #dedede;
 }
-.account_login input {
+.my-account_login input {
   outline: none;
   border: none;
   width: 90%;
@@ -182,49 +182,49 @@ export default {
   font-size: 15px;
   padding-left: 8px;
 }
-.icon_user {
+.my-icon_user {
   display: block;
   width: 22px;
   height: 22px;
   background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/icon_phone.2b4394b85b.png");
   background-size: 22px 22px;
 }
-.account_login .icon_password {
+.my-account_login .my-icon_password {
   display: block;
   width: 22px;
   height: 22px;
   background: url("https://misc.gomein.net.cn/plus/images/u/login/icon_pwd.png?v=2017092001");
   background-size: 22px 22px;
 }
-.icon_clear {
+.my-icon_clear {
   display: block;
   width: 13px;
   height: 13px;
   background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/close.91ce307578.png");
   background-size: 13px 13px;
 }
-.icon_seen {
+.my-icon_seen {
   display: block;
   width: 16px;
   height: 16px;
   background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/noSee.f86edb4266.png");
   background-size: 16px 16px;
 }
-.account-operation {
+.my-account-operation {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
 }
-.account-operation a {
+.my-account-operation a {
   color: #78bee9;
   font-size: 15px;
 }
-.login_btn {
+.my-login_btn {
   width: 285px;
   height: 45px;
   margin: 30px auto;
 }
-.login_btn .btn {
+.my-login_btn .my-btn {
   width: 100%;
   height: 100%;
   border: none;
@@ -232,17 +232,17 @@ export default {
   color: #fff;
   border-radius: 20px;
 }
-.message_login {
+.my-message_login {
   width: 290px;
 }
-.message_login .tel {
+.my-message_login .my-tel {
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding: 40px 0 8px;
   border-bottom: 1px solid #dedede;
 }
-.message_login .pwd {
+.my-message_login .my-pwd {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -250,7 +250,7 @@ export default {
   position: relative;
 }
 
-.message_login input {
+.my-message_login input {
   outline: none;
   border: none;
   width: 90%;
@@ -260,14 +260,14 @@ export default {
   margin-left: 8px;
   
 }
-.message_login .icon_msg {
+.my-message_login .my-icon_msg {
   display: block;
   width: 22px;
   height: 22px;
   background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/mssageCheck.f3ca560a6d.png");
   background-size: 22px 22px;
 }
-.get_code {
+.my-get_code {
   width: 120px;
   height: 32px;
   font-size: 13px;
@@ -277,14 +277,14 @@ export default {
   border: 1px solid #f20c59;
   border-radius: 50px;
 }
-.code_line {
+.my-code_line {
   margin-right: 15px;
   width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.bottom_line {
+.my-bottom_line {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -292,50 +292,50 @@ export default {
   background-color: #ddd;
   width: 60%;
 }
-.liscen {
+.my-liscen {
   display: block;
   font-size: 12px;
   color: #999;
   margin-top: -20px;
 }
-.liscen a {
+.my-liscen a {
   font-size: 13px;
   color: #78bee9;
 }
-.other {
+.my-other {
   margin-top: 90px;
   height: 20px;
   line-height: 20px;
   text-align: center;
   font-size: 15px;
 }
-.other .txt {
+.my-other .my-txt {
   color: #999;
   padding: 0 5px;
   vertical-align: -4px;
 }
-.other .line {
+.my-other .my-line {
   display: inline-block;
   width: 80px;
   border-top: 1px solid #ccc;
 }
 
-.other_login {
+.my-other_login {
   display: flex;
   justify-content: space-between;
   align-content: center;
   margin-top: 30px;
 }
-.other_login a {
+.my-other_login a {
   flex: 1;
   text-align: center;
 }
-.other_login img {
+.my-other_login img {
   width: 42px;
   height: 42px;
   margin: 0 15.25px 5px;
 }
-.other_login span {
+.my-other_login span {
   color: #666;
   font-size: 13px;
 }
