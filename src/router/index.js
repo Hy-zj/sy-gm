@@ -6,6 +6,7 @@ import goodSelect from '../views/goodSelect.vue'
 import cart from '../views/cart.vue'
 import my from '../views/my.vue'
 import loginMy from '../views/loginMy.vue'
+import search from '../views/search.vue'
 
 Vue.use(Router)
 
@@ -33,6 +34,10 @@ export default new Router({
     {
       path: '/loginMy',
       component: loginMy
+    },
+    {
+      path: '/search',
+      component: search
     },
     {
       path:'*',
