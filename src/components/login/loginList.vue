@@ -1,5 +1,6 @@
 <template>
-  <div class="loginList">
+  <div>
+    <div class="loginList">
     <div class="loginList-one">
       <div class="loginList-one-img">
         0.00
@@ -41,6 +42,7 @@
       </p>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -52,7 +54,7 @@ export default {
 <style>
 .loginList{
   margin-top: 20px;
-  width: 375px;
+  width: 100%;
   height: 83px;
   display: flex;
   margin-bottom: 10px;

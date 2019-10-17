@@ -1,5 +1,6 @@
 <template>
-  <div class="homeSp">
+ <div>
+    <div class="homeSp">
     <div class="homeSp-homeSp-left">
       <div class="homeSp-home-left-one">
         <div>
@@ -45,6 +46,7 @@
       </div>
     </div>
   </div>
+ </div>
 </template>
 
 <script>
@@ -64,21 +66,24 @@ export default {
 
 <style>
 .homeSp {
-  width: 351px;
-  height: 138.88px;
-  margin: 0 15px;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
+  justify-content: space-between;
 }
 .homeSp-homeSp-left{
-  flex: 1;
+  width: 100%;
+  height: 100%;
   border-right: 2px solid #f2f2f2;
   display: flex;
   flex-direction: column;
 }
 .homeSp-homeSp-right{
-  flex: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -125,7 +130,8 @@ export default {
   padding: 0 0 0 12px;
 }
 .homeSp-icon{
-  flex: 1;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,8 +139,7 @@ export default {
   margin-top: 15px;
 }
 .homeSp-icon1{
-  width: 54.06px;
-  height: 54.06px;
+  flex: 1;
 }
 .homeSp-icon1 img{
   width: 100%;
@@ -155,7 +160,7 @@ export default {
   text-align: center;
 }
 .homeSp-homeSp-right-tree{
-  height: 71.08px;
+  flex: 1;
   vertical-align: middle;
 }
 .homeSp-homeSp-right-tree img{

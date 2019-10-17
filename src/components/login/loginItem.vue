@@ -1,11 +1,13 @@
 <template>
-  <div class="loginItem">
+  <div>
+    <div class="loginItem">
     <div class="loginItem-item" v-for="item in loginItemList" :key="item.id">
       <div class="loginItem-item-img">
         <img :src="item.imgurl" alt />
       </div>
       <p class="loginItem-item-desc">{{item.desc}}</p>
     </div>
+  </div>
   </div>
 </template>
 
@@ -63,8 +65,8 @@ export default {
 
 <style>
 .loginItem {
-  width: 375px;
-  height: 172px;
+  width: 100%;
+  height: 100%;
   background: rgb(255, 255, 255);
   margin-top: 20px;
   display: flex;

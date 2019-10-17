@@ -1,5 +1,6 @@
 <template>
-  <div class="homeJx">
+  <div>
+    <div class="homeJx">
     <div class="homeJx-homeJx-top">
       <img src="//gfs13.gomein.net.cn/wireless/T1bHAyB5Zv1RCvBVdK_1065_129.png" alt />
     </div>
@@ -20,6 +21,7 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -30,9 +32,9 @@ export default {
 
 <style>
 .homeJx {
-  width: 351px;
-  height: 175.66px;
-  margin: 0 15px;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
@@ -41,8 +43,7 @@ export default {
   margin-top: 15px;
 }
 .homeJx-homeJx-top {
-  width: 351px;
-  height: 42.5px;
+ flex: 1;
   border-bottom: 1px solid #f2f2f2;
   overflow: hidden;
 }
@@ -51,8 +52,7 @@ export default {
   height: 100%;
 }
 .homeJx-homeJx-bottom {
-  width: 351px;
-  height: 132.16px;
+ flex: 1;
   display: flex;
 }
 .homeJx-homeJx-bottom-one {
@@ -81,8 +81,7 @@ export default {
   padding: 2.4px 0 8px 12px;
 }
 .homeJx-item3 {
-  width: 175px;
-  height: 70.98px;
+  flex: 1;
   overflow: hidden;
 }
 .homeJx-item3 img {

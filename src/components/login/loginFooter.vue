@@ -113,7 +113,7 @@ export default {
 
 <style>
 .loginFooter {
-  width: 375px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -129,26 +129,25 @@ export default {
 }
 
 .loginFooter-main {
-  width: 375px;
+  width:100%;
   height: 100%;
 }
 .loginFooter-list {
-  width: 351px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 .loginFooter-item {
-  width: 172px;
-  height: 260px;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-right: 3px;
+  padding: 3px;
 }
 .loginFooter-item-one {
-  width: 172px;
-  height: 166px;
+  flex: 1;
   padding: 6px 6px 0;
 }
 .loginFooter-item-one img {

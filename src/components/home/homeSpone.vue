@@ -1,5 +1,6 @@
 <template>
-  <div class="homeSpone">
+  <div>
+    <div class="homeSpone">
     <div class="homeSpone-homeSpone-left">
       <img src="//gfs10.gomein.net.cn/wireless/T1VVVyB5Lv1RCvBVdK_354_242.jpg"/>
     </div>
@@ -18,6 +19,7 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -28,9 +30,9 @@ export default {
 
 <style>
 .homeSpone {
-  width: 351px;
-  height: 120.28px;
-  margin: 0 15px;
+  width: 100%;
+  height: 100%;
+  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
@@ -57,20 +59,24 @@ export default {
 }
 .homeSpone-right-two{
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: space-around;
   margin-top: 12px;
+  justify-content: center;
+  align-items: center;
 }
 .homeSpone-right-two-one{
-  width: 63.17px;
-  height: 63.17px;
+  flex: 1;
+  margin: 20px;
 }
 .homeSpone-right-two-one img{
   width: 100%;
   height: 100%;
 }
 .homeSpone-right-two-two{
-  width: 63.17px;
-  height: 63.17px;
+  flex: 1;
+  margin: 20px;
 }
 .homeSpone-right-two-two img{
   width: 100%;

@@ -1,11 +1,11 @@
 <template>
   <div class="loginMy">
-    <loginHeader></loginHeader>
+    <loginHeader class="main"></loginHeader>
     <loginNav></loginNav>
     <loginMain></loginMain>
     <loginList></loginList>
     <loginItem></loginItem>
-    <loginFooter></loginFooter>
+    <loginFooter class="main"></loginFooter>
   </div>
 </template>
 

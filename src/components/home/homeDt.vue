@@ -1,31 +1,33 @@
 <template>
-  <div class="homeDt">
-    <div class="homeDt-homeDt-left">
-      <div class="homeDt-homeDt-left-title">
-        <img src="//gfs13.gomein.net.cn/wireless/T1yEhbB7J_1RCvBVdK_120_28.png" alt />
+  <div>
+    <div class="homeDt">
+      <div class="homeDt-homeDt-left">
+        <div class="homeDt-homeDt-left-title">
+          <img src="//gfs13.gomein.net.cn/wireless/T1yEhbB7J_1RCvBVdK_120_28.png" alt />
+        </div>
       </div>
-    </div>
-    <div class="homeDt-homeDt-right">
-      <van-swipe :show-indicators="false"  style="height: 36px;" :autoplay="1000" vertical>
-        <van-swipe-item>
-          <div class="homeDt-right-one">
-            <span class="homeDt-icon">国美黄金</span>
-            <span class="homeDt-icon1">投资金条 优惠购金</span>
-          </div>
-        </van-swipe-item>
-        <van-swipe-item>
-          <div class="homeDt-right-one">
-            <span class="homeDt-icon">金秋收季节</span>
-            <span class="homeDt-icon1">套购0元的配件</span>
-          </div>
-        </van-swipe-item>
-        <van-swipe-item>
-          <div class="homeDt-right-one">
-            <span class="homeDt-icon">冰箱洗衣机</span>
-            <span class="homeDt-icon1">套购7.5折起</span>
-          </div>
-        </van-swipe-item>
-      </van-swipe>
+      <div class="homeDt-homeDt-right">
+        <van-swipe :show-indicators="false" style="height: 36px;" :autoplay="1000" vertical>
+          <van-swipe-item>
+            <div class="homeDt-right-one">
+              <span class="homeDt-icon">国美黄金</span>
+              <span class="homeDt-icon1">投资金条 优惠购金</span>
+            </div>
+          </van-swipe-item>
+          <van-swipe-item>
+            <div class="homeDt-right-one">
+              <span class="homeDt-icon">金秋收季节</span>
+              <span class="homeDt-icon1">套购0元的配件</span>
+            </div>
+          </van-swipe-item>
+          <van-swipe-item>
+            <div class="homeDt-right-one">
+              <span class="homeDt-icon">冰箱洗衣机</span>
+              <span class="homeDt-icon1">套购7.5折起</span>
+            </div>
+          </van-swipe-item>
+        </van-swipe>
+      </div>
     </div>
   </div>
 </template>
@@ -43,10 +45,9 @@ export default {
 
 <style>
 .homeDt {
-  width: 351px;
+  width: 100%;
   height: 51.38px;
   background: red;
-  margin: 0 15px;
   padding-top: 15px;
   background: white;
   border-radius: 8px 8px 0 0;
@@ -55,7 +56,7 @@ export default {
   align-items: center;
 }
 .homeDt-homeDt-left {
-  width: 95.78px;
+  flex: 1;
   line-height: 36px;
   margin-left: 10px;
   border-right: 1px solid #f2f2f2;
@@ -70,7 +71,7 @@ export default {
   margin: 0 auto;
 }
 .homeDt-homeDt-right {
-  width: 260px;
+  flex-grow: 5;
   height: 36px;
   margin-bottom: 5px;
 }
@@ -85,7 +86,7 @@ export default {
   font-size: 12px;
   color: #f20c56;
   background: #ffbce7;
-  margin-right: 5px; 
+  margin-right: 5px;
   border: 1px solid #ffbce7;
   border-radius: 5px;
 }

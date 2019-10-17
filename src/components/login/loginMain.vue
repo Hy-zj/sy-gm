@@ -1,5 +1,6 @@
 <template>
-  <div class="loginMain">
+  <div>
+    <div class="loginMain">
     <div class="loginMain-one">
       <div class="loginMain-one-img">
         <img src="//app.gomein.net.cn/plus/images/ucenter/daifukuai.png?v=2017092001" alt="">
@@ -44,6 +45,7 @@
       </p>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -54,7 +56,7 @@ export default {
 
 <style>
 .loginMain{
-  width: 375px;
+  width: 100%;
   height: 96px;
   display: flex;
   margin-bottom: 10px;

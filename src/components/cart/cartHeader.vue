@@ -1,10 +1,12 @@
 <template>
-  <div class="cartHeader">
-    <div class="cartHeader-one" @click="change">
-      <van-icon name="arrow-left" />
+  <div>
+    <div class="cartHeader">
+      <div class="cartHeader-one" @click="change">
+        <van-icon name="arrow-left" />
+      </div>
+      <div class="cartHeader-two">购物车</div>
+      <div class="cartHeader-tree"></div>
     </div>
-    <div class="cartHeader-two">购物车</div>
-    <div class="cartHeader-tree"></div>
   </div>
 </template>
 
@@ -16,8 +18,8 @@ Vue.use(Icon);
 export default {
   name: "cartHeader",
   methods: {
-    change () {
-      this.$router.back()
+    change() {
+      this.$router.back();
     }
   }
 };
@@ -25,11 +27,14 @@ export default {
 
 <style>
 .cartHeader {
-  width: 351px;
-  height: 44px;
-  margin: 0 12px;
+  width: 100%;
+  height: 50px;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #f2f2f2;
+  background: #fff;
 }
 .cartHeader-one {
   width: 35.5px;
