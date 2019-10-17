@@ -7,6 +7,8 @@ import cart from '../views/cart.vue'
 import my from '../views/my.vue'
 import loginMy from '../views/loginMy.vue'
 import detail from '../views/details.vue'
+import search from '../views/search.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -39,8 +41,12 @@ export default new Router({
       component: detail
     },
     {
-      path:'*',
-      component:home
+      path: '/search',
+      component: search
+    },
+    {
+      path: '*',
+      component: home
     }
   ]
 })

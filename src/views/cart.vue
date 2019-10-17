@@ -12,6 +12,11 @@ import cartNav from '../components/cart/cartNav'
 import cartMain from '../components/cart/cartMain'
 export default {
   name: 'cart',
+  data() {
+    return {
+      tab: false
+    }
+  },
   components: {
     cartHeader,
     cartNav,
