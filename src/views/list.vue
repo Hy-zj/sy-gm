@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height:100%">
     <div class="gg-header" v-show="show">
       <div class="ad_one">
         <img src="https://css.gomein.net.cn/plus/style/appDown/images/close.png" @click="showAd" />
@@ -14,12 +14,17 @@
       <div class="ad_four">下载领取</div>
     </div>
 
-
     <topSearch class="fixed"></topSearch>
     <van-row class="list_container" type="flex">
-      <van-col class="list_container_tab_title" span="5">
+      <van-col id="sidebarParent" class="list_container_tab_title" span="5">
         <van-sidebar v-model="activeIndex">
-          <van-sidebar-item v-for="tab in tabList" :key="tab.id" :title="tab.title" />
+          <van-sidebar-item
+            @click="getY(tab.id)"
+            :id="tab.id"
+            v-for="tab in tabList"
+            :key="tab.id"
+            :title="tab.title"
+          />
         </van-sidebar>
       </van-col>
       <van-col class="list_product_list" span="18">
@@ -84,13 +89,19 @@ export default {
     }
   },
   methods: {
+    getY(id) {
+      var p = document.getElementById("sidebarParent");
+      var doc = document.getElementById(id);
+
+      p.scrollTop = doc.offsetTop;
+    },
     getData() {
       this.$store.commit("insert");
     },
     showAd() {
       this.show = false;
       document.querySelector(".fixed").style.top = "0px";
-      document.querySelector(".list_container").style.marginTop = "44px";
+      document.querySelector(".list_container").style.top = "44px";
     }
   }
 };
@@ -161,16 +172,21 @@ export default {
   background-color: #fff;
 }
 .list_container {
-  margin-top: 104px;
+  position: absolute;
+  top: 104px;
+  bottom: 0;
+  /* height: 100%; */
 }
 .list_container_tab_title {
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .list_product_list {
   width: 290px;
+  height: 100%;
   padding-left: 10px;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 .list_product_list img {
   width: 280px;
