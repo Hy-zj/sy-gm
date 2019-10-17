@@ -46,7 +46,7 @@ export default {
   width: 351px;
   height: 51.38px;
   background: red;
-  margin: 0 auto;
+  margin: 0 15px;
   padding-top: 15px;
   background: white;
   border-radius: 8px 8px 0 0;

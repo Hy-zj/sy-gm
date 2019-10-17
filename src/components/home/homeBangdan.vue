@@ -130,7 +130,7 @@ export default {
 .homeBangdan {
   width: 351px;
   height: 118.97px;
-  margin: 0 auto;
+  margin: 0 15px;
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;

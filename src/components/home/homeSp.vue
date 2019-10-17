@@ -66,11 +66,10 @@ export default {
 .homeSp {
   width: 351px;
   height: 138.88px;
-  margin: 0 auto;
+  margin: 0 15px;
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
-  margin: 0 auto;
 }
 .homeSp-homeSp-left{
   flex: 1;

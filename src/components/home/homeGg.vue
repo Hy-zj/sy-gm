@@ -25,8 +25,7 @@ export default {
   .homeGg-list{
     width: 351px;
     height: 100px;
-    margin-left: 13px;
-    margin-top: 10px;
+    margin:  0 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

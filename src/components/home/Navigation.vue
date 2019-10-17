@@ -11,10 +11,13 @@
         <input type="text" value="华为Mate 30新品上市" />
       </div>
       <div class="Navigation-idx-tree">
+        <router-link to="/cart">
         <div class="Navigation-idx-tree-left">
           <img src="//css.gomein.net.cn/plus/style/index/images/grass_cart.png?v=2017092001" alt />
         </div>
-        <div class="Navigation-idx-tree-right">登录</div>
+        </router-link>
+       <router-link to="/my">
+        <div class="Navigation-idx-tree-right">登录</div></router-link>
       </div>
     </div>
   </div>
@@ -38,10 +41,11 @@ export default {
   z-index: 10;
   width: 375px;
   height: 52.8px;
+  display: flex;
 }
 .Navigation-idx-header {
-  width: 375px;
-  height: 52.8px;
+  width: 100%;
+  height: 100%;
   padding-left: 10px;
   padding-right: 10px;
   background: #fff;
@@ -52,6 +56,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 .Navigation-idx-img{
   width: 28.8px;
@@ -76,7 +81,7 @@ export default {
   color: #666;
 }
 .Navigation-idx-two input{
- flex: 1;
+ width: 100%;
  border-radius: 16px;
  height: 34px;
  cursor: default;
@@ -90,6 +95,7 @@ export default {
   flex: 1;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 .Navigation-idx-tree-left{
   width: 26.39px;
@@ -105,6 +111,6 @@ export default {
   line-height: 50px;
   font-size: 14px;
   color: #666;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 </style>

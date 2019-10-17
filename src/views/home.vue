@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Navigation></Navigation>
     <homeSwiper></homeSwiper>
     <homeList></homeList>
@@ -53,6 +53,9 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+.home{
+  width: 100%;
+  height: 100%;
+}
 </style>

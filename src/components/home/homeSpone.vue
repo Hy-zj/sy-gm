@@ -30,7 +30,7 @@ export default {
 .homeSpone {
   width: 351px;
   height: 120.28px;
-  margin: 0 auto;
+  margin: 0 15px;
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;
@@ -41,7 +41,7 @@ export default {
 }
 .homeSpone-homeSpone-left img{
   width: 100%;
-  height: 1005;
+  height: 100%;
 }
 .homeSpone-homeSpone-right{
   flex: 1;
