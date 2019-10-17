@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +53,7 @@ export default {
   right: -5px;
   top: 53px;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .x {

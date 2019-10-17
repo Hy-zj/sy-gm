@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="list_topSearch_header">
-      <van-icon name="arrow-left" class="arrow-left" />
+      <router-link to="/home"><van-icon name="arrow-left" class="arrow-left"></van-icon></router-link>
       <input type="text" placeholder="家居家装 好物低至5折" />
       <van-icon name="search" class="search" />
       <img

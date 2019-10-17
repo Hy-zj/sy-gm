@@ -1,7 +1,7 @@
-{"titleList": [
+{"data": [
 {
     "id": 1,
-    "title": "手机电脑",
+    "title": "热门分类",
     "son":[
           {"name":"大家电",
             "children":[
@@ -52,6 +52,9 @@
                         },
                         {"imgurl":"https://img10.gomein.net.cn/image/prodimg/gicon/cat10005460.png",
                          "des":"床品件套"
+                        },
+                        {"imgurl":"https://img10.gomein.net.cn/image/prodimg/gicon/cat10005460.png",
+                            "des":"床上四件套"
                         }
                         ]
         }
@@ -62,13 +65,13 @@
     "title": "手机数码",
     "son":[
         {"name":"手机通讯",
-            "chileren":[
+            "children":[
                 {"imgurl":"https://img11.gomein.net.cn/image/prodimg/gicon/cat10000070.png",
                 "des":"手机"
             }]
         },
         {"name":"手机配件",
-            "chileren":[
+            "children":[
                 {"imgurl":"https://img13.gomein.net.cn/image/prodimg/gicon/cat15787588.png",
                  "des":"移动电源"
                 },
@@ -112,8 +115,9 @@
 {
     "id": 3,
     "title": "电脑办公",
+    "top_img":"http://gfs13.gomein.net.cn/wireless/T1AVbyB4_v1RCvBVdK_1125_347.jpg",
     "son":[
-          {"imgurl":"http://gfs13.gomein.net.cn/wireless/T1AVbyB4_v1RCvBVdK_1125_347.jpg",
+          {
             "name":"电脑整机",
             "children":[
                         {"imgurl":"https://img10.gomein.net.cn/image/prodimg/gicon/cat10000092.png",
@@ -149,8 +153,9 @@
 {
     "id": 4,
     "title": "电视影音",
+    "top_img":"http://gfs11.gomein.net.cn/wireless/T19gEvB7xb1RCvBVdK_1125_347.jpg",
     "son":[
-        {"imgurl":"http://gfs11.gomein.net.cn/wireless/T19gEvB7xb1RCvBVdK_1125_347.jpg",
+        {
           "name":"电视",
           "children":[
                       {"imgurl":"https://gfs8.gomein.net.cn/T1JubjBjYT1RCvBVdK.png",
@@ -189,7 +194,7 @@
     "title": "空调冰箱",
     "son":[
         {"name":"空调",
-            "chileren":[
+            "children":[
                         {"imgurl":"http://gfs8.gomein.net.cn/T1wDh_BsJT1RCvBVdK.png",
                         "des":"节能空调"
                         },
@@ -208,7 +213,7 @@
         ]
         },
         {"name":"冰箱/冷柜",
-            "chileren":[
+            "children":[
                 {"imgurl":"http://img14.gomein.net.cn/image/prodimg/gicon/cat10000054.png",
                  "des":"冰箱"
                 },
@@ -229,8 +234,9 @@
 {
     "id": 6,
     "title": "厨房卫浴",
+    "top_img":"http://gfs7.gomein.net.cn/wireless/T16VKyB_DT1RCvBVdK_1125_347.jpg",
     "son":[
-        {"imgurl":"http://gfs7.gomein.net.cn/wireless/T16VKyB_DT1RCvBVdK_1125_347.jpg",
+        {
           "name":"厨卫大电",
           "children":[
                       {"imgurl":"https://img12.gomein.net.cn/image/prodimg/promimg/topics/201605/201605301144040985.png",
@@ -273,8 +279,8 @@
 {
     "id": 7,
     "title": "生活电器",
+    "top_img":"http://gfs9.gomein.net.cn/wireless/T1tEVyBvxv1RCvBVdK_1125_347.jpg",
     "son":[
-        {"imgurl":"http://gfs9.gomein.net.cn/wireless/T1tEVyBvxv1RCvBVdK_1125_347.jpg"},
         {
           "name":"环境电器",
           "children":[
