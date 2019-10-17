@@ -104,6 +104,7 @@ export default {
 .list_container_tab_title {
   height: 100%;
   overflow-y: auto;
+  
 }
 .list_product_list {
   width: 290px;

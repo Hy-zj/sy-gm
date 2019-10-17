@@ -1,8 +1,10 @@
 <template>
   <div class="gg-header">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="stree"></div>
+    <div class="ad_one">
+      <img src="https://css.gomein.net.cn/plus/style/appDown/images/close.png" alt="">
+    </div>
+    <div class="ad_two"></div>
+    <div class="ad_stree">下载领取</div>
   </div>
 </template>
 
@@ -14,8 +16,10 @@ export default {
 
 <style scoped>
 .gg-header{
-  width: 375px;
-  height: 50px;
-  background: red;
+  width: 100%;
+  height: 60px;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
 }
 </style>
