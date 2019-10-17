@@ -36,10 +36,6 @@ export default {
 
 <style scoped>
 .Navigation-idx-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
   display: flex;
   width: 100%;
   background: red;

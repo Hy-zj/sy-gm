@@ -1,6 +1,20 @@
 <template>
   <div>
-    <div class="clo" v-show="show" @click="showAd"></div>
+    <div class="gg-header" v-show="show">
+      <div class="ad_one">
+        <img src="https://css.gomein.net.cn/plus/style/appDown/images/close.png" @click="showAd" />
+      </div>
+      <div class="ad_two">
+        <img src="https://gfs9.gomein.net.cn/T1VnKvB7_T1RCvBVdK.png" alt />
+      </div>
+      <div class="ad_three">
+        <p>注册享好礼</p>
+        <span>送205元红包</span>
+      </div>
+      <div class="ad_four">下载领取</div>
+    </div>
+
+
     <topSearch class="fixed"></topSearch>
     <van-row class="list_container" type="flex">
       <van-col class="list_container_tab_title" span="5">
@@ -45,10 +59,12 @@ Vue.use(Sidebar)
   .use(Col)
   .use(Row);
 import topSearch from "../components/list/topSearch";
+import Advertisement from "../components/home/Advertisement";
 export default {
   name: "list",
   components: {
-    topSearch
+    topSearch,
+    Advertisement
   },
   data() {
     return {
@@ -81,30 +97,75 @@ export default {
 </script>
 
 <style scoped>
-.clo {
+.gg-header {
   width: 100%;
-  height: 40px;
+  height: 60px;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: red;
   z-index: 99;
 }
+.ad_one {
+  width: 15%;
+  padding: 22.5px 20px;
+}
+.ad_one img {
+  width: 15px;
+  height: 15px;
+}
+.ad_two {
+  width: 15%;
+  padding: 9px 0;
+}
+.ad_two img {
+  width: 42px;
+  height: 42px;
+}
+.ad_three {
+  width: 45%;
+  padding: 12px 0;
+}
+.ad_three p {
+  color: #fff;
+  font-size: 13px;
+}
+.ad_three span {
+  color: #999;
+  font-size: 12px;
+}
+.ad_four {
+  background-color: #ee1955;
+  color: #fff;
+  padding: 21px 0;
+  width: 25%;
+  font-size: 15px;
+  text-align: center;
+}
+/* .clo {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+} */
 .fixed {
   width: 100%;
   position: fixed;
-  top: 40px;
+  top: 60px;
   left: 0;
   z-index: 99;
   background-color: #fff;
 }
 .list_container {
-  margin-top: 84px;
+  margin-top: 104px;
 }
 .list_container_tab_title {
   height: 100%;
   overflow-y: auto;
-  
 }
 .list_product_list {
   width: 290px;

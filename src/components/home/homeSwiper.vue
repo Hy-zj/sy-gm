@@ -63,7 +63,6 @@ export default {
   width: 100%;
   height: 175px;
   background: #ccc;
-  position: relative;
 }
 .homeSwiper-home-img{
   width: 100%;

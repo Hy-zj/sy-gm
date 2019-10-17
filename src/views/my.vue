@@ -25,23 +25,16 @@
             <div class="my-account_login">
               <div class="my-user">
                 <span class="my-icon_user"></span>
-                <input
-                  type="text"
-                  id="username"
-                  placeholder="手机号/邮箱/用户名/门店会员卡号"
-                  v-model="$store.state.loginObj.name"
-                />
-                <span class="my-icon_clear"></span>
+                <input type="text"  id="inp"  placeholder="手机号/邮箱/用户名/门店会员卡号"  v-model="$store.state.loginObj.name"  />
+                <span class="my-icon_clear" @click="clearEvent1"></span>
               </div>
               <div class="my-pwd">
                 <span class="my-icon_password"></span>
-                <input
-                  type="password"
-                  placeholder="请输入密码"
-                  v-model="$store.state.loginObj.password"
-                  @input="change"
+                <input  type="password"  placeholder="请输入密码"  v-model="$store.state.loginObj.password"  @input="change"  id="psd"
                 />
-                <span class="my-icon_seen"></span>
+                <span class="my-icon_clear my_icon_clear" @click="clearEvent2"></span>
+                <span class="my-icon_noseen" @click="seenEvent" v-if="seen"></span>
+                <span class="my-icon_seen" @click="noseen" v-else></span>
               </div>
               <div class="my-account-operation">
                 <a href="https://reg.m.gome.com.cn/registered.html">手机号快速注册</a>
@@ -62,13 +55,14 @@
               <div class="my-tel">
                 <span class="my-icon_user"></span>
                 <input type="text" id="usertel" placeholder="手机号" />
+                <span class="my-icon_clear my_icon-clear" @click="clearEvent3"></span>
               </div>
               <div class="my-code_list">
                 <div class="my-pwd">
                   <span class="my-icon_msg"></span>
                   <div class="my-code_line">
-                    <input type="text" placeholder="请输入短信验证码" />
-                    <span class="my-icon_clear"></span>
+                    <input type="text" placeholder="请输入短信验证码" id="msg" />
+                    <span class="my-icon_clear" @click="clearEvent4"></span>
                   </div>
                   <div class="my-get_code">获取验证码</div>
                   <span class="my-bottom_line"></span>
@@ -77,11 +71,8 @@
               <div class="my-login_btn">
                 <button class="my-btn">同意协议注册并登录</button>
               </div>
-              <span class="my-liscen">
-                未注册手机登录成功将自动注册，且代表您已同意协议
-                <a
-                  href="https://m.gome.com.cn/register_boder.html"
-                >《国美平台服务协议》</a>
+              <span class="my-liscen"> 未注册手机登录成功将自动注册，且代表您已同意协议
+                <a  href="https://m.gome.com.cn/register_boder.html">《国美平台服务协议》</a>
                 <a href="https://m.gome.com.cn/register_boder_privacy.html">《国美平台隐私政策》</a>
                 <a href="https://m.gome.com.cn/meifubao_service_agreement.html">《美付宝服务协议》</a>
               </span>
@@ -89,29 +80,7 @@
           </van-tab>
         </van-tabs>
       </div>
-      <div class="my-other">
-        <span class="my-line"></span>
-        <span class="my-txt">使用以下账户登录</span>
-        <span class="my-line"></span>
-      </div>
-      <div class="my-other_login">
-        <a href="https://login.m.gome.com.cn/membership_card.html">
-          <img src="https://misc.gomein.net.cn/plus/images/u/login_new/mdhy.png" alt />
-          <span>门店会员</span>
-        </a>
-        <a href>
-          <img src="https://misc.gomein.net.cn/plus/images/u/login_new/QQ.png" alt />
-          <span>QQ</span>
-        </a>
-        <a href>
-          <img src="https://misc.gomein.net.cn/plus/images/u/login_new/weibo.png" alt />
-          <span>新浪微博</span>
-        </a>
-        <a href>
-          <img src="https://misc.gomein.net.cn/plus/images/u/login_new/zfb.png" alt />
-          <span>支付宝</span>
-        </a>
-      </div>
+      <myFooter></myFooter>
     </div>
   </div>
 </template>
@@ -119,15 +88,17 @@
 <script>
 import Vue from "vue";
 import { Icon, Tab, Tabs } from "vant";
-
-Vue.use(Icon)
-  .use(Tab)
-  .use(Tabs);
+import myFooter from "../components/my/myFooter";
+Vue.use(Icon).use(Tab).use(Tabs);
 export default {
   name: "my",
+  components: {
+    myFooter
+  },
   data() {
     return {
-      active: 2
+      active: 2,
+      seen: true
     };
   },
   methods: {
@@ -145,6 +116,26 @@ export default {
         (this.$store.state.loginObj.name = ""),
           (this.$store.state.loginObj.password = "");
       }
+    },
+    seenEvent() {
+      this.seen = !this.seen;
+      document.querySelector("#psd").type = "text";
+    },
+    noseen() {
+      this.seen = !this.seen;
+      document.querySelector("#psd").type = "password";
+    },
+    clearEvent1() {
+      document.querySelector("#inp").value = "";
+    },
+    clearEvent2() {
+      document.querySelector("#psd").value = "";
+    },
+    clearEvent3() {
+      document.querySelector("#usertel").value = "";
+    },
+    clearEvent4() {
+      document.querySelector("#msg").value = "";
     }
   }
 };
@@ -156,6 +147,12 @@ export default {
 }
 .text-danger {
   color: black;
+}
+.my_icon_clear {
+  padding-right: 20px;
+}
+.my_icon-clear {
+  margin-top: 10px;
 }
 .my {
   width: 100vw;
@@ -218,7 +215,6 @@ export default {
   width: 90%;
   color: #dedede;
   font-size: 15px;
-  padding-left: 8px;
 }
 .my-icon_user {
   display: block;
@@ -240,12 +236,21 @@ export default {
   height: 13px;
   background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/close.91ce307578.png");
   background-size: 13px 13px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+.my-icon_noseen {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/noSee.f86edb4266.png");
+  background-size: 16px 16px;
 }
 .my-icon_seen {
   display: block;
   width: 16px;
   height: 16px;
-  background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/noSee.f86edb4266.png");
+  background: url("https://misc.gomein.net.cn/plus/style/ucenter/css/see.a79f6fcb48.png");
   background-size: 16px 16px;
 }
 .my-account-operation {
@@ -295,7 +300,7 @@ export default {
   color: #dedede;
   font-size: 15px;
   text-align: left;
-  margin-left: 8px;
+  /* margin-left: 8px; */
 }
 .my-message_login .my-icon_msg {
   display: block;
@@ -338,42 +343,5 @@ export default {
 .my-liscen a {
   font-size: 13px;
   color: #78bee9;
-}
-.my-other {
-  margin-top: 90px;
-  height: 20px;
-  line-height: 20px;
-  text-align: center;
-  font-size: 15px;
-}
-.my-other .my-txt {
-  color: #999;
-  padding: 0 5px;
-  vertical-align: -4px;
-}
-.my-other .my-line {
-  display: inline-block;
-  width: 80px;
-  border-top: 1px solid #ccc;
-}
-
-.my-other_login {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin-top: 30px;
-}
-.my-other_login a {
-  flex: 1;
-  text-align: center;
-}
-.my-other_login img {
-  width: 42px;
-  height: 42px;
-  margin: 0 15.25px 5px;
-}
-.my-other_login span {
-  color: #666;
-  font-size: 13px;
 }
 </style>

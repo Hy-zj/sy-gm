@@ -6,7 +6,7 @@ import goodSelect from '../views/goodSelect.vue'
 import cart from '../views/cart.vue'
 import my from '../views/my.vue'
 import loginMy from '../views/loginMy.vue'
-
+import detail from '../views/details.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +33,10 @@ export default new Router({
     {
       path: '/loginMy',
       component: loginMy
+    },
+    {
+      path: '/detail',
+      component: detail
     },
     {
       path:'*',
