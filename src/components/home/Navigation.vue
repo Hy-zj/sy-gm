@@ -12,20 +12,21 @@
       </div>
       <div class="Navigation-idx-tree">
         <router-link to="/cart">
-        <div class="Navigation-idx-tree-left">
-          <img src="//css.gomein.net.cn/plus/style/index/images/grass_cart.png?v=2017092001" alt />
-        </div>
+          <div class="Navigation-idx-tree-left">
+            <img src="//css.gomein.net.cn/plus/style/index/images/grass_cart.png?v=2017092001" alt />
+          </div>
         </router-link>
-       <router-link to="/my">
-        <div class="Navigation-idx-tree-right">登录</div></router-link>
+        <router-link to="/my">
+          <div class="Navigation-idx-tree-right">登录</div>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import { Icon } from 'vant';
+import Vue from "vue";
+import { Icon } from "vant";
 
 Vue.use(Icon);
 export default {
@@ -34,22 +35,20 @@ export default {
 </script>
 
 <style scoped>
-.Navigation {
+.Navigation-idx-header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  width: 375px;
-  height: 52.8px;
   display: flex;
-}
-.Navigation-idx-header {
   width: 100%;
-  height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  background: red;
+   height: 52.8px;
+  padding-left: 12px;
+  padding-right: 12px;
   background: #fff;
   display: flex;
+  justify-content: space-between;
 }
 .Navigation-idx-one {
   flex: 1;
@@ -58,11 +57,11 @@ export default {
   align-items: center;
   flex-shrink: 0;
 }
-.Navigation-idx-img{
+.Navigation-idx-img {
   width: 28.8px;
   height: 28.8px;
 }
-.Navigation-idx-img img{
+.Navigation-idx-img img {
   width: 100%;
   height: 100%;
 }
@@ -74,22 +73,22 @@ export default {
   align-items: center;
   position: relative;
 }
-.Navigation-idx-icon{
+.Navigation-idx-icon {
   position: absolute;
   top: 18px;
   left: 20px;
   color: #666;
 }
-.Navigation-idx-two input{
- width: 100%;
- border-radius: 16px;
- height: 34px;
- cursor: default;
- border: 0;
- background-color: #f6f6f6;
- color: #999;
- font-size: 12px;
- padding-left: 30px;
+.Navigation-idx-two input {
+  width: 100%;
+  border-radius: 16px;
+  height: 34px;
+  cursor: default;
+  border: 0;
+  background-color: #f6f6f6;
+  color: #999;
+  font-size: 12px;
+  padding-left: 30px;
 }
 .Navigation-idx-tree {
   flex: 1;
@@ -97,16 +96,15 @@ export default {
   align-items: center;
   flex-shrink: 0;
 }
-.Navigation-idx-tree-left{
+.Navigation-idx-tree-left {
   width: 26.39px;
   height: 23.39px;
-
 }
-.Navigation-idx-tree-left img{
+.Navigation-idx-tree-left img {
   width: 100%;
   height: 100%;
 }
-.Navigation-idx-tree-right{
+.Navigation-idx-tree-right {
   width: 40px;
   line-height: 50px;
   font-size: 14px;

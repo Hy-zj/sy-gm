@@ -2,15 +2,15 @@
   <div class="home">
     <Navigation></Navigation>
     <homeSwiper></homeSwiper>
-    <homeList></homeList>
+    <homeList class="main"></homeList>
     <homeGg></homeGg>
-    <homeDt></homeDt>
-    <homeSp></homeSp>
-    <homeSpone></homeSpone>
-    <homeBangdan></homeBangdan>
-    <homeJx></homeJx>
-    <homeRx></homeRx>
-    <homePb></homePb>
+    <homeDt class="main"></homeDt>
+    <homeSp class="main"></homeSp>
+    <homeSpone class="main"></homeSpone>
+    <homeBangdan class="main"></homeBangdan>
+    <homeJx class="main"></homeJx>
+    <homeRx class="main"></homeRx>
+    <homePb class="main"></homePb>
     <float></float>
     <backTop></backTop>
     <routerFooter></routerFooter>
@@ -55,7 +55,10 @@ export default {
 
 <style>
 .home{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.main{
+  margin: 0 15px;
 }
 </style>

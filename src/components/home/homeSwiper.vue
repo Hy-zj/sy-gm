@@ -1,5 +1,6 @@
 <template>
-  <div class="homeSwiper">
+  <div>
+    <div class="homeSwiper">
     <van-swipe :autoplay="3000" indicator-color="white">
       <van-swipe-item>
         <div class="homeSwiper-home-img">
@@ -43,6 +44,7 @@
       </van-swipe-item>
     </van-swipe>
   </div>
+  </div>
 </template>
 
 <script>
@@ -58,7 +60,7 @@ export default {
 
 <style>
 .homeSwiper {
-  width: 375px;
+  width: 100%;
   height: 175px;
   background: #ccc;
   position: relative;

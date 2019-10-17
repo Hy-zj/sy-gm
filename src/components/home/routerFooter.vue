@@ -1,5 +1,6 @@
 <template>
-  <div class="router-wrap">
+ <div>
+    <div class="router-wrap">
     <div class="router-wrap-one">
       <router-link to="/home" tag="span">
         <div class="router-wrap-img">
@@ -39,6 +40,7 @@
       </router-link>
     </div>
   </div>
+ </div>
 </template>
 
 <script>
@@ -52,7 +54,7 @@ export default {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 375px;
+  width: 100%;
   height: 55px;
   display: flex;
   background: #fff;

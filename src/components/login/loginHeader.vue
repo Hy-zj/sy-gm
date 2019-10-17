@@ -25,11 +25,11 @@ export default {
 
 <style>
 .loginHeader {
-  width: 351px;
+  width: 100%;
   height: 44px;
-  margin: 0 12px;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
+  justify-content: space-between;
 }
 .loginHeader-one {
   width: 35.5px;

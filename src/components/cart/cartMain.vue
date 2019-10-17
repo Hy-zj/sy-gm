@@ -1,5 +1,6 @@
 <template>
-  <div class="cartMain">
+ <div>
+    <div class="cartMain">
    <div class="cartMain-img">
      <img src="//gfs13.gomein.net.cn/wireless/T1bHAyB5Zv1RCvBVdK_1065_129.png" alt="">
    </div>
@@ -20,6 +21,7 @@
      </ul>
    </div>
   </div>
+ </div>
 </template>
 
 <script>
@@ -97,40 +99,37 @@ export default {
 
 <style>
 .cartMain{
-  width: 375px;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   background: #f2f2f2;
 }
 .cartMain-img{
-  width: 375px;
-  height: 49px;
+ flex: 1;
 }
 .cartMain-img img{
   width: 100%;
   height: 100%;
 }
 .cartMain-main{
-  width: 375px;
+  width: 100%;
   height: 100%;
 }
 .cartMain-list{
-  width: 351px;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 .cartMain-item{
-  width: 172px;
-  height: 260px;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  margin-right: 3px;
+  padding: 0 5px;
 }
 .cartMain-item-one{
-  width: 172px;
-  height: 166px;
+  flex: 1;
   padding: 6px 6px 0;
 }
 .cartMain-item-one img{

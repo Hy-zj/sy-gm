@@ -1,11 +1,13 @@
 <template>
-  <div class="homeList">
+  <div>
+    <div class="homeList">
     <div v-for="item in homeList" :key="item.id" class="homeList-home-list">
       <div class="homeList-home-img">
         <img :src="item.imgurl" alt="">
       </div>
       <div class="homeList-home-desc">{{item.desc}}</div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -73,7 +75,7 @@ export default {
 
 <style>
 .homeList{
-  width: 375px;
+  width: 100%;
   height: 187px;
   padding-top: 12px;
   display: flex;
@@ -81,11 +83,16 @@ export default {
 }
 .homeList-home-list{
   width: 20%;
-  height: 20%;
+  height: 93.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .homeList-home-img{
   width: 78px;
   height: 52px;
+  flex-shrink: 0;
 }
 .homeList-home-img img{
   width: 100%;
@@ -95,7 +102,6 @@ export default {
 .homeList-home-desc{
   font-size: 12px;
   color: #333;
-  text-align: center;
   line-height: 22.8px;
   margin-top: 5px;
 }

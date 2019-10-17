@@ -1,5 +1,6 @@
 <template>
-  <div class="homeGg">
+  <div>
+    <div class="homeGg">
     <ul class="homeGg-list">
       <li class="homeGg-list-item1">
         <img src="//gfs13.gomein.net.cn/T1m8LyBvW_1RCvBVdK.gif" alt="">
@@ -8,6 +9,7 @@
         <img src="//gfs13.gomein.net.cn/T1QHbyB7K_1RCvBVdK.gif" alt="">
       </li>
     </ul>
+  </div>
   </div>
 </template>
 
@@ -19,20 +21,21 @@ export default {
 
 <style scoped>
   .homeGg{
-    width: 375px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
   }
   .homeGg-list{
-    width: 351px;
-    height: 100px;
-    margin:  0 15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .homeGg-list-item1{
-    width: 170px;
-    height: 100px;
+    width: 50%;
+    height: 100%;
     margin-right: 11px;
     border-radius: 8px;
     box-shadow: 3px;
@@ -42,8 +45,8 @@ export default {
     height: 100%;
   }
   .homeGg-list-item2{
-    width: 170px;
-    height: 100px;
+    width: 50%;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 3px;
   }

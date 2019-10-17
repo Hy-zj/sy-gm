@@ -1,5 +1,6 @@
 <template>
-  <div class="cartNav">
+  <div>
+    <div class="cartNav">
     <div class="cartNav-top">
       <p class="cartNav-top-desc">有新商品加入购物车，点击查看新增商品</p>
      <router-link to="/my"> <span class="cartNav-top-icon">去登录</span></router-link>
@@ -12,6 +13,7 @@
       <router-link to="/home"><div class="cartNav-bottom-icon">先逛逛</div></router-link>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -22,18 +24,19 @@ export default {
 
 <style>
 .cartNav {
-  width: 351px;
-  height: 372px;
+  width: 100%;
+  height: 100%;
   margin: 0 12px;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
   flex-direction: column;
 }
 .cartNav-top {
-  width: 351px;
+  width: 100%;
   line-height: 36px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .cartNav-top-desc {
   width: 266px;
@@ -52,8 +55,7 @@ export default {
   text-align: center;
 }
 .cartNav-bottom {
-  width: 351px;
-  height: 336px;
+  flex: 1;
   color: #3333;
   padding: 50px 0 40px;
   display: flex;
