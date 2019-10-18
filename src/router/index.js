@@ -8,6 +8,7 @@ import my from '../views/my.vue'
 import loginMy from '../views/loginMy.vue'
 import detail from '../views/details.vue'
 import search from '../views/search.vue'
+import searchList from '../views/searchList.vue'
 
 Vue.use(Router)
 
@@ -43,6 +44,10 @@ export default new Router({
     {
       path: '/search',
       component: search
+    },
+    {
+      path: '/searchList',
+      component: searchList
     },
     {
       path: '*',

@@ -9,8 +9,8 @@
             <div class="searchone-icon-main-one" v-else>店铺</div>
             <div class="searchone-icon-main-tree" @click="change"></div>
           </div>
-          <input type="text" placeholder="冰箱洗衣机套购7.5折起" v-model="message" @mousedown="changeone" @keyup.enter="tiaozhuan()"/>
-         <div class="searchone-icon"> <van-icon name="search" /></div>
+          <input type="text" placeholder="冰箱洗衣机套购7.5折起" v-model="$store.state.message" @mousedown="changeone" @keyup.enter="tiaozhuan()"/>
+         <div class="searchone-icon"> <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201710/12/salerxYredi657e.html?from=1"><van-icon name="search" /></a></div>
         </div>
       </div>
       <div class="searchone-nav">热词搜索</div>
@@ -27,7 +27,7 @@
       <div class="searchone-footer">
         <ul>
           <li>搜索历史</li>
-          <li v-for="item in searchoneList" :key="item.id">{{item}}</li>
+          <li v-for="item in $store.state.searchoneList" :key="item.id">{{item}}</li>
         </ul>
         <div class="searchone-footer-del"><span @click="del">清空历史记录</span></div>
       </div>
@@ -45,8 +45,8 @@ export default {
   data() {
     return {
       show: true,
-      searchoneList:　[],
-      message : ""
+      // searchoneList:　[],
+      // message : ""
     }
   },
   methods: {
@@ -54,13 +54,17 @@ export default {
       this.show = !this.show 
     },
     del () {
-      this.searchoneList = []
+      this.$store.commit('delOver')
     },
     changeone () {
       document.querySelector('input').placeholder = ""
     },
     tiaozhuan () {
-      this.$router.push("/home")
+      // this.$router.push("/home")
+      // this.searchoneList.push(this.message)
+      this.$store.commit('runGo')
+      this.$store.commit('delShop')
+      this.$router.push("/searchList")
     },
     backHome () {
       this.$router.back()
