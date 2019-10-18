@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="product_swiper">
     <van-swipe @change="onChange">
       <van-swipe-item><img src="https://gfs17.gomein.net.cn/T1NOWjBvYv1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
       <van-swipe-item><img src="https://gfs13.gomein.net.cn/T1GrJbBjbT1RCvBVdK_400.jpg?v=20170727" alt=""></van-swipe-item>
@@ -32,4 +32,23 @@ export default {
 </script>
 
 <style>
+.product_swiper{
+  text-align: center;
+}
+
+.product_swiper img{
+  width:300px;
+  height: 300px; 
+}
+.custom-indicator{
+  width: 53px;
+  height: 24px;
+  background-color: rgba(51,51,51,.5);
+  color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 73%;
+
+}
 </style>

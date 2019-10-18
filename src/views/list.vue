@@ -175,7 +175,6 @@ export default {
   position: absolute;
   top: 104px;
   bottom: 0;
-  /* height: 100%; */
 }
 .list_container_tab_title {
   height: 100%;
@@ -187,6 +186,7 @@ export default {
   height: 100%;
   padding-left: 10px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .list_product_list img {
   width: 280px;

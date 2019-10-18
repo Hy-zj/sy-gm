@@ -133,7 +133,7 @@ export default {
   display: flex;
   overflow: hidden;
 }
- .homePb-homePb-list ul {
+.homePb-homePb-list ul {
   width: 100%;
   height: 100%;
   display: flex;
