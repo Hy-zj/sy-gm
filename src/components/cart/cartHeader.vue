@@ -34,7 +34,6 @@ export default {
       if (!this.$el.contains(e.target)) {
         this.tab = false;
       }
-      console.log(e.target)
     })
   },
   components: {

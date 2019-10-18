@@ -133,13 +133,13 @@ export default {
   display: flex;
   overflow: hidden;
 }
-ul {
+.homePb-homePb-list ul {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-ul li {
+.homePb-homePb-list ul li {
   list-style: none;
   width: 50%;
   opacity: 1;
