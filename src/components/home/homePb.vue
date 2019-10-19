@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div>
     <div class="homePb">
       <div class="homePb-homePb-img">
         <img src="//gfs10.gomein.net.cn/wireless/T1Go_jBjD_1RCvBVdK_1065_129.png" />
@@ -108,9 +108,6 @@ export default {
 </script>
 
 <style>
-.main{
-  margin: 0 15px;
-}
 .homePb {
   width: 100%;
   height: 100%;
@@ -122,7 +119,8 @@ export default {
 }
 .homePb-homePb-img {
   flex: 1;
-  margin-top: 5px;
+  margin: 0;
+  background: rgb(242, 242, 242)
 }
 .homePb-homePb-img img {
   width: 100%;
@@ -132,12 +130,14 @@ export default {
   flex: 1;
   display: flex;
   overflow: hidden;
+  background: rgb(242, 242, 242)
 }
 .homePb-homePb-list ul {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  background: rgb(242, 242, 242)
 }
 .homePb-homePb-list ul li {
   list-style: none;
@@ -146,7 +146,6 @@ export default {
   border: 1px solid #f2f2f2;
   border-radius: 8px;
   background: white;
-  padding: 5px;
 }
 .homePb-list-item {
   flex: 1;

@@ -21,10 +21,10 @@
     <homeSp class="main"></homeSp>
     <homeSpone class="main"></homeSpone>
     <homeBangdan class="main"></homeBangdan>
-    <homeJx class="main"></homeJx>
-    <homeRx class="main"></homeRx>
+    <homeJx></homeJx>
+    <homeRx></homeRx>
     <router-link to="/detail">
-      <homePb class="main"></homePb>
+      <homePb></homePb>
     </router-link>
     <float></float>
     <backTop></backTop>

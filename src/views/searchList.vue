@@ -35,7 +35,7 @@
         <div class="searchList-main-nav-tree">销量</div>
         <div class="searchList-main-nav-four">筛选</div>
       </div>
-      <div class="searchList-main-header">
+      <div class="searchList-main-header" ref="searchList">
         <div class="searchList-main-header-one" :class="{active1:msglog}" @click="gmtwo">国美自营</div>
         <div class="searchList-main-header-two" :class="{active2:msglog1}" @click="gmtree" ref="headertwo">团抢商品</div>
         <div class="searchList-main-header-tree">
