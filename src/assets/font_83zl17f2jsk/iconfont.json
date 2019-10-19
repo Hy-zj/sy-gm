@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1765540",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "5291818",
+      "name": "预约",
+      "font_class": "yuyue",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    }
+  ]
+}
