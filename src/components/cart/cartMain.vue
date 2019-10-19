@@ -117,7 +117,6 @@ export default {
   height: 100%;
   overflow: hidden;
   background: #f2f2f2;
-  margin: 0;
 }
 .cartMain-img {
   flex: 1;

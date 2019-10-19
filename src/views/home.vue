@@ -24,7 +24,7 @@
     <homeJx></homeJx>
     <homeRx></homeRx>
     <router-link to="/detail">
-      <homePb></homePb>
+      <homePb class="main"></homePb>
     </router-link>
     <float></float>
     <backTop></backTop>

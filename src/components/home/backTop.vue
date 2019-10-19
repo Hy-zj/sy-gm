@@ -21,7 +21,7 @@ export default {
   },
   // 回到顶部特效当移动大于60px显示
   mounted() {
-    window.addEventListener("scroll", this.scrollToTop);
+    window.addEventListener("scroll", this.scrollToTop1);
   },
   destroyed() {
     window.removeEventListener("scroll", this.scrollToTop);
@@ -38,7 +38,7 @@ export default {
         }
       }, 16);
     },
-    scrollToTop() {
+    scrollToTop1() {
       const that = this;
       let scrollTop =
         window.pageYOffset ||

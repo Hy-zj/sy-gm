@@ -4,7 +4,11 @@
       <router-link to="/home">
         <van-icon name="arrow-left" class="arrow-left"></van-icon>
       </router-link>
-      <input type="text" v-model="$store.state.searchoneList[$store.state.searchoneList.length-1]" @click="backHome" />
+      <input
+        type="text"
+        v-model="$store.state.searchoneList[$store.state.searchoneList.length-1]"
+        @click="backHome"
+      />
       <van-icon name="search" class="search" />
       <img
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAANCAYAAAAwqJfrAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5MkVCRjVFMTYzQ0YxMUU4QkM3MTgyMTA3MDY2OTQxRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MkVCRjVFMjYzQ0YxMUU4QkM3MTgyMTA3MDY2OTQxRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjkyRUJGNURGNjNDRjExRThCQzcxODIxMDcwNjY5NDFFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjkyRUJGNUUwNjNDRjExRThCQzcxODIxMDcwNjY5NDFFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+UorgpQAAARdJREFUeNrUllEOgjAMhgvxBJBwAn0jMfHZFzgE3EDjHcBE8Q4cBx58VwNvegW4ArbLWCqZ6AtL+JNmXeEbJesKVtd10CtN0zUOB7Qt2grtiXZFy9EeMK5J2CzLFGv1yWKiZxpGFryMXJ+UxYRTlewfiY491AhLCVtJktAW3Puo7/sQBAG4rgtN00BZllBVFQc3CN5Y2RhjF7JWFBDHsbrqeR5EUSR8BtL9O+YbY21Z1EL0ZjoN4ludb4K15ekToi3QyXEcPl0y3yhryzYhRLWiU9u2fPpivlHWlv1MqCgKLTSIX3W+CXYhm/aeZnVdA7WyMAzVqSSA4kz5wDfGzqrPUhkAOkccTj+AbwtPzn58webyb/AWYAAoKep22aBcgwAAAABJRU5ErkJggg=="
@@ -20,7 +24,10 @@
       <div class="searchList-nav-tree">国美自营</div>
       <div class="searchList-nav-four">
         <a href="http://mcp.m.gome.com.cn/gome/dy_C64gM1kAFkF/brand.html?shopKey=10000962">
-          <img src="//app.gomein.net.cn/plus/images/product_list/flagship_right.png?v=2017092001" alt />
+          <img
+            src="//app.gomein.net.cn/plus/images/product_list/flagship_right.png?v=2017092001"
+            alt
+          />
         </a>
       </div>
     </div>
@@ -37,9 +44,14 @@
       </div>
       <div class="searchList-main-header" ref="searchList">
         <div class="searchList-main-header-one" :class="{active1:msglog}" @click="gmtwo">国美自营</div>
-        <div class="searchList-main-header-two" :class="{active2:msglog1}" @click="gmtree" ref="headertwo">团抢商品</div>
+        <div
+          class="searchList-main-header-two"
+          :class="{active2:msglog1}"
+          @click="gmtree"
+          ref="headertwo"
+        >团抢商品</div>
         <div class="searchList-main-header-tree">
-           <van-dropdown-menu>
+          <van-dropdown-menu>
             <van-dropdown-item v-model="value1" :options="option1" />
           </van-dropdown-menu>
         </div>
@@ -69,7 +81,7 @@ export default {
       tab: false,
       msg: true,
       msglog: false,
-       msglog1: false,
+      msglog1: false,
       value1: 0,
       option1: [
         { text: "全部商品", value: 0 },
@@ -95,13 +107,13 @@ export default {
     //动态组件跳转
     gmtwo() {
       this.currentTabComponent = "searchListFzTwo";
-      this.msglog = !this.msglog
+      this.msglog = !this.msglog;
     },
     //动态组件跳转
     gmtree() {
-      this.msglog1 = !this.msglog1
+      this.msglog1 = !this.msglog1;
       this.currentTabComponent = "searchListFzTree";
-      console.log(this.$refs.headertwo.removeAttribute('color'))
+      console.log(this.$refs.headertwo.removeAttribute("color"));
     },
     scrollToTop() {
       const that = this;
@@ -130,6 +142,7 @@ export default {
 
     //往下划效果
     window.addEventListener("scroll", this.scrollToTop);
+    console.log(this.$refs.searchList.style.position="fixed")
   }
 };
 </script>
@@ -237,6 +250,7 @@ img {
   padding: 0 15px;
   border-bottom: 1px solid #f2f2f2;
   background: white;
+  position: static;
 }
 .searchList-main-header-one {
   flex: 1;
