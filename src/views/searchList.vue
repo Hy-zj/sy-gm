@@ -38,7 +38,11 @@
       <div class="searchList-main-header">
         <div class="searchList-main-header-one" :class="{active1:msglog}" @click="gmtwo">国美自营</div>
         <div class="searchList-main-header-two" :class="{active2:msglog1}" @click="gmtree" ref="headertwo">团抢商品</div>
-        <div class="searchList-main-header-tree">品牌</div>
+        <div class="searchList-main-header-tree">
+           <van-dropdown-menu>
+            <van-dropdown-item v-model="value1" :options="option1" />
+          </van-dropdown-menu>
+        </div>
       </div>
     </div>
     <component v-bind:is="currentTabComponent"></component>

@@ -9,6 +9,7 @@ import loginMy from '../views/loginMy.vue'
 import detail from '../views/details.vue'
 import search from '../views/search.vue'
 import searchList from '../views/searchList.vue'
+import evaluate from '../components/details/evaluate/index.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,10 @@ export default new Router({
     {
       path: '/searchList',
       component: searchList
+    },
+    {
+      path: '/evaluate',
+      component: evaluate
     },
     {
       path: '*',

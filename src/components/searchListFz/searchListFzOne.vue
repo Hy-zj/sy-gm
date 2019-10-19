@@ -1,13 +1,19 @@
 <template>
   <div class="searchList-footer">
-    <div v-if="tabList[activeIndex]">
-    <div class="searchList-footer-item" v-for="son in activeData.son[0].children" :key="son.name">
-      <div class="searchList-footer-item-left">
-        <img :src="son.imgurl" alt />
+    <router-link to="/detail">
+      <div v-if="tabList[activeIndex]">
+        <div
+          class="searchList-footer-item"
+          v-for="son in activeData.son[0].children"
+          :key="son.name"
+        >
+          <div class="searchList-footer-item-left">
+            <img :src="son.imgurl" alt />
+          </div>
+          <div class="searchList-footer-item-right">{{son.des}}</div>
+        </div>
       </div>
-      <div class="searchList-footer-item-right">{{son.des}}</div>
-    </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -16,8 +22,8 @@ export default {
   name: "searchListFzOne",
   data() {
     return {
-     activeIndex: 0
-    }
+      activeIndex: 0
+    };
   },
   mounted() {
     this.getData();
@@ -33,7 +39,7 @@ export default {
   methods: {
     getData() {
       this.$store.commit("insert");
-    },
+    }
   }
 };
 </script>
