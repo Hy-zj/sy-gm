@@ -121,7 +121,7 @@ export default {
 .loginNav-bottom-tree {
   position: absolute;
   top: 30px;
-  right: -5px;
+  right: 0px;
   width: 40px;
   height: 20px;
   background: red;

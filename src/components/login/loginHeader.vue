@@ -29,19 +29,18 @@ export default {
   height: 44px;
   display: flex;
   border-bottom: 1px solid #f2f2f2;
-  justify-content: space-between;
-}
-.loginHeader-one {
-  width: 35.5px;
-  line-height: 44px;
+  justify-content: center;
   text-align: center;
 }
+.loginHeader-one {
+  width: 10%;
+  line-height: 44px;
+}
 .loginHeader-two {
-  width: 79px;
+  width: 90%;
   line-height: 44px;
   font-size: 18px;
   color: #333;
-  margin: 0 auto;
-  text-align: center;
+  margin-left: -20px;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="detail">
     <detailsTop></detailsTop>
 
-    <detailsFooter class="details_foot"></detailsFooter>
+    <detailsFooter :goodId="id" class="details_foot"></detailsFooter>
   </div>
 </template>
 
@@ -15,8 +15,13 @@ export default {
   components: {
     detailsTop,
     detailsFooter,
-   
+  },
+  data () {
+    return {
+      id:1002//实例值
+    }
   }
+  
 };
 </script>
 

@@ -111,22 +111,14 @@ export default {
       // document.body.scrollTop;
       that.scrollTop = scrollTop;
       if (that.scrollTop > 85) {
-        that.msg = false;
-        if (that.msg == false) {
-          document.querySelector(".searchList-main-header").style.top = "0px";
-          document.querySelector(".searchList-main-header").style.position =
-            "fixed";
+          document.querySelector(".searchList-main-header").style.position = "fixed";
+          document.querySelector(".searchList-main-header").style.top = 0;
+      } 
+      if (that.scrollTop == 0) {
+          document.querySelector(".searchList-main-header").style.position ="static";
+          document.querySelector(".searchList-main-header").style.top = 0;
         }
-      } else {
-        if (that.scrollTop == 0) {
-          that.msg = true;
-          if (that.msg === true) {
-            document.querySelector(".searchList-main-header").style.top = "";
-            document.querySelector(".searchList-main-header").style.position =
-              "";
-          }
-        }
-      }
+      
     }
   },
   mounted() {

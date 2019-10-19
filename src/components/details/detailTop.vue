@@ -2,7 +2,7 @@
   <div>
     <div class="detailTop_top">
       <div class="top_left">
-        <van-icon name="arrow-left" class="my-arrow-left" size="24px" />
+        <van-icon name="arrow-left" class="my-arrow-left" size="24px" @click="backLastOne"/>
       </div>
       <div class="top_middle">
         <div class="product" @click="showdet(0)" :class="{detActive:detIndex==0}">商品</div>
@@ -120,6 +120,9 @@ export default {
     },
     showdet(index) {
       this.detIndex = index;
+    },
+    backLastOne(){
+      window.history.back()
     }
   },
   mounted() {
