@@ -2,7 +2,7 @@
   <div>
     <cartHeader></cartHeader>
     <cartNav></cartNav>
-    <cartMain class="main"></cartMain>
+    <cartMain></cartMain>
   </div>
 </template>
 
