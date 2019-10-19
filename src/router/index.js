@@ -10,6 +10,7 @@ import detail from '../views/details.vue'
 import search from '../views/search.vue'
 import searchList from '../views/searchList.vue'
 import evaluate from '../components/details/evaluate/index.vue'
+import cartXq from '../components/details/cartXq/cartXq.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,10 @@ export default new Router({
     {
       path: '/evaluate',
       component: evaluate
+    },
+    {
+      path: '/cartXq',
+      component: cartXq
     },
     {
       path: '*',
