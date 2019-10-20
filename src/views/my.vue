@@ -15,6 +15,7 @@
           class="my-tab_title_container"
           line-width="145px"
           color="#F20C59"
+          title-active-color="#F20C59"
         >
           <van-tab class="my-tab_title">
             <template v-slot:title>

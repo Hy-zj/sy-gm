@@ -123,12 +123,19 @@ export default {
       // document.body.scrollTop;
       that.scrollTop = scrollTop;
       if (that.scrollTop > 85) {
-          document.querySelector(".searchList-main-header").style.position = "fixed";
-          document.querySelector(".searchList-main-header").style.top = 0;
+          let SMH = document.querySelector(".searchList-main-header");
+
+          if(SMH){
+              SMH.style.position = "fixed"
+              SMH.style.top = 0
+          }
       } 
       if (that.scrollTop == 0) {
-          document.querySelector(".searchList-main-header").style.position ="static";
-          document.querySelector(".searchList-main-header").style.top = 0;
+        let SMH = document.querySelector(".searchList-main-header");
+          if(SMH){
+              SMH.style.position = "static"
+              SMH.style.top = 0
+          }
         }
       
     }

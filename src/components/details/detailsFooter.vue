@@ -20,7 +20,7 @@
         size="23px"
         text="购物车"
         @click="onClickIcon"
-        :info="carNum"
+        :info="num"
         class="detail_footer_icon"
       />
       <van-goods-action-button
@@ -58,27 +58,14 @@ export default {
   mounted() {
     this.readCarData();
   },
-  computed: {
-      //计算属性，计算购物车中的商品总数
-    carNum() {
-      var num = 0;//初始值为0
-      var keys = Object.keys(this.carData);
-      keys.forEach(e => {
-          //用key（商品ID）获取到加入购物车的商品数量
-        num += this.carData[e];
-      });
-    //如果最后是0，则返回null，返回null他不会显示那个0
-      return num === 0 ? null : num;
-    }
-  },
   //购物车功能一般在用户以后打开页面也会存在之前加入购物车的商品
   //所以选择localStorage用来存储购物车的内容
   //购物车的结构
   //key=>商品的唯一值，这里管他叫ID
   //value=>加入购物车的数量
   methods: {
-      //当点击加入购物车的时候，判断有没有这个商品，没有就给他赋一个初始值1
-      //如果存在的情况下，就+1
+    //当点击加入购物车的时候，判断有没有这个商品，没有就给他赋一个初始值1
+    //如果存在的情况下，就+1
     onClickButton() {
       this.carData[this.goodId] = this.carData[this.goodId]
         ? this.carData[this.goodId] + 1
@@ -86,19 +73,34 @@ export default {
       console.log(this.carData);
       this.saveCarData();
     },
+    updateNum() {
+      let num = 0; //初始值为0
+      let data = this.carData;
+      let keys = Object.keys(data);
+      keys.forEach(e => {
+        //用key（商品ID）获取到加入购物车的商品数量
+        num += data[e];
+      });
+      console.log(num);
+      //如果最后是0，则返回null，返回null他不会显示那个0
+      this.num = num === 0 ? null : num;
+    },
     onClickIcon() {},
     //存操作
     saveCarData() {
       localStorage.setItem("gm_car", JSON.stringify(this.carData));
+      this.updateNum()
     },
     //取操作
     readCarData() {
       let data = localStorage.getItem("gm_car");
-      var tempData = JSON.parse(data);//这里我用的json字符串存原本的结构
-      if (tempData) {//如果不存在或者解析失败，则不能把null值赋给carData
-      //否则会报can not read xxx from null
-        this.carData = tempData;//如果有数据且解析成功，就取出来给他赋值
+      var tempData = JSON.parse(data); //这里我用的json字符串存原本的结构
+      if (tempData) {
+        //如果不存在或者解析失败，则不能把null值赋给carData
+        //否则会报can not read xxx from null
+        this.carData = tempData; //如果有数据且解析成功，就取出来给他赋值
       }
+      this.updateNum()
     }
   }
 };

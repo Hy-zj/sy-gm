@@ -6,7 +6,12 @@
       </div>
       <div class="homePb-homePb-list">
         <ul>
-          <li class="homePb-item1" v-for="item in homePbList" :key="item.id">
+          <li
+            class="homePb-item1"
+            v-for="item in homePbList"
+            @click="goView(item.id)"
+            :key="item.id"
+          >
             <div class="homePb-list-item">
               <img :src="item.imgurl" />
             </div>
@@ -103,6 +108,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    goView(id) {
+      this.$router.push({ name: "ProductDetail", params: { id: id } });
+    }
   }
 };
 </script>
@@ -120,7 +130,7 @@ export default {
 .homePb-homePb-img {
   flex: 1;
   margin: 0;
-  background: rgb(242, 242, 242)
+  background: rgb(242, 242, 242);
 }
 .homePb-homePb-img img {
   width: 100%;
@@ -130,14 +140,14 @@ export default {
   flex: 1;
   display: flex;
   overflow: hidden;
-  background: rgb(242, 242, 242)
+  background: rgb(242, 242, 242);
 }
 .homePb-homePb-list ul {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: rgb(242, 242, 242)
+  background: rgb(242, 242, 242);
 }
 .homePb-homePb-list ul li {
   list-style: none;

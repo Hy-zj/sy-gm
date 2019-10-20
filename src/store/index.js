@@ -23,6 +23,15 @@ const store = new Vuex.Store({
         state.itemObj = response.data.data;
       })
     },
+    demo(state,id){
+      Vue.axios.get(`/data/${id}.json`).then(res=>{
+        //数据处理
+        console.log(res)
+      }).catch(e=>{
+        //错误处理
+        console.log(e)
+      })
+    },
     //添加搜索信息方法
     runGo(state){
       state.searchoneList.push(state.message)

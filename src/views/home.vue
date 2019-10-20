@@ -23,9 +23,9 @@
     <homeBangdan class="main"></homeBangdan>
     <homeJx></homeJx>
     <homeRx></homeRx>
-    <router-link to="/detail">
+    <!-- <router-link to="/detail"> -->
       <homePb class="main"></homePb>
-    </router-link>
+    <!-- </router-link> -->
     <float></float>
     <backTop></backTop>
     <routerFooter></routerFooter>

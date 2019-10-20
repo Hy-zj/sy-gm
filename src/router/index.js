@@ -40,7 +40,8 @@ export default new Router({
       component: loginMy
     },
     {
-      path: '/detail',
+      path: '/detail/:id',
+      name:"ProductDetail",
       component: detail
     },
     {

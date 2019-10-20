@@ -14,19 +14,44 @@ export default {
   name: "detail",
   components: {
     detailsTop,
-    detailsFooter,
+    detailsFooter
   },
-  data () {
+  mounted() {
+    let id = this.$route.params.id;
+    if (!id) {
+      this.$router.back(-1);
+    }
+    this.id = id;
+    this.getDetail(id);
+  },
+  data() {
     return {
-      id:1002//实例值
+      id: 1002 //实例值
+    };
+  },
+  methods: {
+    getDetail(id) {
+      let _this = this
+      console.log(id);
+      this.$axios
+        .get(`/data/details/${id}.json`)
+        .then(res => {
+          console.log(res.data.data);
+          //code here
+        })
+        .catch(e => {
+          console.log(e);
+          alert("不存在")
+          _this.$router.back(-1)
+          //code here
+        });
     }
   }
-  
 };
 </script>
 
 <style scoped>
-.detail{
+.detail {
   height: 100%;
   padding-bottom: 60px;
 }
