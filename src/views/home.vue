@@ -72,11 +72,32 @@ export default {
     float,
     backTop
   },
+  mounted() {
+    window.addEventListener("scroll", this.scrollFunc, true);
+  },
   methods: {
     showAd() {
       this.show = false;
       document.querySelector(".home_fixed").style.top = "0px";
       document.querySelector(".home_swi").style.marginTop = "44px";
+    },
+    scrollFunc(e) {
+      let h = document.documentElement.scrollTop;
+      if (this.show) {
+        if (h >= 60) {
+          document.querySelector(".gg-header").style.top = "-60px";
+          document.querySelector(".home_fixed").style.top = "0px";
+          document.querySelector(".home_swi").style.marginTop = "44px";
+        }else{
+          document.querySelector(".gg-header").style.top = `-${h}px`;
+          document.querySelector(".home_fixed").style.top = 60-h+"px";
+          document.querySelector(".home_swi").style.marginTop = 104-h+"px";
+        }
+      }else{
+        document.querySelector(".gg-header").style.top = "-60px";
+          document.querySelector(".home_fixed").style.top = "0px";
+          document.querySelector(".home_swi").style.marginTop = "44px";
+      }
     }
   }
 };

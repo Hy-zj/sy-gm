@@ -113,6 +113,7 @@ export default {
       btnFlag: true,
       checked: true,
       tab: false,
+      selectAll: false,
       //购物车的商品数据
       goodsList: [],
       bgcolor: "red"
@@ -126,6 +127,14 @@ export default {
     [Stepper.name]: Stepper,
     DropDownTab,
     stapers
+  },
+  mounted() {
+    let flag = true;
+    this.$store.state.car.forEach(item => {
+      if (!item.selected) {
+        flag = false;
+      }
+    });
   },
   methods: {
     scollTop() {
