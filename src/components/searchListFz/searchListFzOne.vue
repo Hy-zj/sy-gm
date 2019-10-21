@@ -1,7 +1,7 @@
 <template>
   <div class="searchListone-footer">
     <div class="searchListone-footer-item" v-for="item1 in item" :key="item1.id">
-      <router-link :to="{ name: 'detail', params: { userId: item1.id,name: item1.title, price: item1.price, desc: item1.desc, count: item1.count}}">
+      <router-link :to="{ name: 'detail', params: { userId: item1.id,name: item1.title, price: item1.price, desc: item1.desc, count: item1.count,imgurl:item1.imgurl}}">
         <div  class="searchListone-footer-item">
           <div class="searchListone-footer-item-left">
           <img :src="item1.imgurl" alt />
