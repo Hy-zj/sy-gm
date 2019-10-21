@@ -1,0 +1,70 @@
+{
+  "code": 0,
+  "data": {
+    "message": [
+      {
+        "id": "001",
+        "title": "华为手机",
+        "price": "1599",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T1PsDXByV_1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "华为手机Mate30(TAS-AL00) 6GB+128GB 全网通 双卡双待 亮黑"
+      },
+      {
+        "id": "002",
+        "title": "小米手机",
+        "price": "1499",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T1ZpYsB4E_1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "小米手机 红米6pro 黑色(黑色)(黑色)"
+      },
+      {
+        "id": "003",
+        "title": "苹果手机",
+        "price": "1299",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+      },
+      {
+        "id": "004",
+        "title": "苹果手机",
+        "price": "1299",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+      },
+      {
+        "id": "005",
+        "title": "苹果手机",
+        "price": "1299",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+      },
+      {
+        "id": "006",
+        "title": "苹果手机",
+        "price": "1299",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+      },
+      {
+        "id": "007",
+        "title": "苹果手机",
+        "price": "1299",
+        "selected": false,
+        "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+        "count": 1,
+        "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+      }
+    ]
+  }
+}
