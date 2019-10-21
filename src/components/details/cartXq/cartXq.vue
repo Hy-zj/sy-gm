@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="cartXq-main">
-        <div class="cartXq-main-conter" v-for="(item,i) in goodsList" :key="item.id">
+        <div class="cartXq-main-conter">
           <div class="cartXq-main-nav" ref="cartXqOne" v-if="btnFlag">
             <div class="cartXq-main-nav-one">
               <van-checkbox v-model="checked" class="checkbox" checked-color="red"></van-checkbox>
@@ -34,28 +34,34 @@
           </div>
           <div class="cartXq-main-shop">
             <div></div>
-            <div class="cartXq-main-shop-list">
+            <div class="cartXq-main-shop-list" v-for="(item,i) in goodsList" :key="item.id">
               <div class="cartXq-main-shop-list-top">
                 <div class="cartXq-main-shop-list-top-left">
                   <!-- 定义上屏的状态然后添加change事件并传递商品id和状态 -->
-                  <van-checkbox  @click="selectedChanged(item.id,$store.getters.getGoodsSelected[item.id])" :value="$store.getters.getGoodsSelected[item.id]" class="checkbox" checked-color="red"></van-checkbox>
+                  <van-checkbox
+                    @click="selectedChanged(item.id,$store.getters.getGoodsSelected[item.id])"
+                    :value="$store.getters.getGoodsSelected[item.id]"
+                    class="checkbox"
+                    checked-color="red"
+                  ></van-checkbox>
                 </div>
                 <div class="cartXq-main-shop-list-top-right">
                   <div class="cartXq-main-shop-list-top-right-left">
                     <img :src="item.imgurl" alt />
                   </div>
                   <div class="cartXq-main-shop-list-top-right-right">
-                    <div
-                      class="cartXq-main-shop-list-top-right-right-one"
-                    >{{item.desc}}</div>
+                    <div class="cartXq-main-shop-list-top-right-right-one">{{item.desc}}</div>
                     <div class="cartXq-main-shop-list-top-right-right-two">{{item.title}}</div>
                     <div class="cartXq-main-shop-list-top-right-right-tree">限购99件</div>
                     <div class="cartXq-main-shop-list-top-right-right-four">
                       <span class="cartXq-main-shop-list-top-right-right-four-left">￥{{item.price}}</span>
                       <span class="cartXq-main-shop-list-top-right-right-four-right">
                         <!-- <van-stepper ref="numbox" @change="countChange" :value="$store.getters.getGoodsCount[item.id]" button-size="18px" />
-                        $store.getters.getGoodsCount[item.id] -->
-                        <stapers :goodsid="item.id" :initcount="$store.getters.getGoodsCount[item.id]"></stapers>
+                        $store.getters.getGoodsCount[item.id]-->
+                        <stapers
+                          :goodsid="item.id"
+                          :initcount="$store.getters.getGoodsCount[item.id]"
+                        ></stapers>
                       </span>
                     </div>
                   </div>
@@ -70,14 +76,19 @@
           </div>
         </div>
         <div class="cartXq-tui">
-            <cartMain></cartMain>
-          </div>
+          <cartMain></cartMain>
+        </div>
       </div>
 
       <div class="cartXq-footer">
-          <van-submit-bar :price="$store.getters.getGoodsCountAndAmount.amount*100" button-text="提交订单" @submit="onSubmit">
-            <van-checkbox ref="allselected" class="checkbox" checked-color="red" @click="allChange">全选</van-checkbox>
-          </van-submit-bar>
+        <van-submit-bar
+          ref="allselected"
+          :price="$store.getters.getGoodsCountAndAmount.amount*100"
+          button-text="提交订单"
+          @submit="onSubmit"
+        >
+          <van-checkbox :value="checked" class="checkbox" checked-color="red" @click="allChange">全选</van-checkbox>
+        </van-submit-bar>
       </div>
     </div>
   </div>
@@ -86,11 +97,11 @@
 <script>
 import Vue from "vue";
 import { Checkbox, SubmitBar, Icon, Stepper } from "vant";
-import axios from 'axios'
-import VueAxios from 'vue-axios'
-import stapers from '../../pulic/stapers'
+import axios from "axios";
+import VueAxios from "vue-axios";
+import stapers from "../../pulic/stapers";
 
-Vue.use(VueAxios, axios)
+Vue.use(VueAxios, axios);
 
 Vue.use(SubmitBar, Checkbox, Icon, Stepper);
 import cartMain from "../../cart/cartMain";
@@ -103,8 +114,8 @@ export default {
       checked: true,
       tab: false,
       //购物车的商品数据
-      goodsList: [
-      ]
+      goodsList: [],
+      bgcolor: "red"
     };
   },
   components: {
@@ -132,66 +143,70 @@ export default {
     },
     onSubmit() {},
     change() {
-      this.$router.push('/searchList');
+      this.$router.push("/searchList");
     },
     toggle() {
       this.tab = !this.tab;
     },
     //购物车上屏数据获取方法
-    getGoodsList () {
+    getGoodsList() {
       //首先我们查阅商品都是通过id来的所以我们先获取store中的所有商品的id用，隔开形成一个字符串
-      var idArr = []
-      this.$store.state.car.forEach(item=>{
-        idArr.push(item.id)
-      })
+      var idArr = [];
+      this.$store.state.car.forEach(item => {
+        idArr.push(item.id);
+      });
       //如果购物车中没有商品就直接返回
-      if(idArr.length<=0){
-         return
+      if (idArr.length <= 0) {
+        return;
       }
       // console.log('1111111')
       //获取购物车上屏列表
       //+ idArr.join(",")
       //对加入购物车的产品进行赛选
-      Vue.axios.get('/data/cardata.json').then((response) => {
+      Vue.axios.get("/data/cardata.json").then(response => {
         // console.log(response.data.data.message)
         if (response.data.code === 0) {
-          response.data.data.message.some((item,index)=>{
-            console.log(item.id)
-            console.log(idArr)
-            if ( idArr.join(",").includes(item.id)) {
-              this.goodsList.push(item)
-              console.log(this.goodsList)
-            }
-          })
+          response.data.data.message.some((item, index) => {
+            // console.log(item.shop)
+            // console.log(idArr)
+            item.shop.some(item => {
+              if (idArr.join(",").includes(item.id)) {
+                this.goodsList.push(item);
+                console.log(this.goodsList);
+              }
+            });
+          });
         }
-      })
+      });
     },
-    
+
     //定义删除商品信息的方法
-    remove(id,index){
+    remove(id, index) {
       //点击删除按钮把本地的goodslist相关的数据删除并且把vuex中的数据清除
-      this.goodsList.splice(index,1)
-      this.$store.commit('removeFormCar',id)
+      this.goodsList.splice(index, 1);
+      this.$store.commit("removeFormCar", id);
     },
     //定义单选事件
-    selectedChanged(id,val){
-      console.log(val)
-      val = !val
-      this.$store.commit('updataGoodsSelected',{
-        id,selected: val
-      })
+    selectedChanged(id, val) {
+      console.log(val);
+      val = !val;
+      this.$store.commit("updataGoodsSelected", {
+        id,
+        selected: val
+      });
     },
     //定义全选点击事件
-    allChange(){
-      console.log(this.$refs.allselected)
+    allChange() {
+      this.checked = !this.checked;
+      console.log(this.$refs.allselected);
     }
   },
   created() {
     window.addEventListener("scroll", this.scollTop);
     //调用获取购物车商品数据的方法
-    this.getGoodsList()
+    this.getGoodsList();
   },
-  mounted(){
+  mounted() {
     // console.log(this.$store.getters.getGoodsSelected[item.id])
   }
 };
@@ -263,14 +278,15 @@ export default {
   width: 100%;
   height: 100%;
   padding: 10px 12px;
+  margin-top: 84px;
 }
 .cartXq-main-shop-list {
   width: 100%;
   height: 197px;
   border: 1px solid #f2f2f2;
   border-radius: 12px;
-  box-shadow: 3px;
-  margin-top: 84px;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  margin-top: 10px;
 }
 .cartXq-main-shop-list-top {
   width: 100%;

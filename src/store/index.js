@@ -39,7 +39,16 @@ const store = new Vuex.Store({
     //获取商品数据
     getdata(state){
       Vue.axios.get('/data/cardata.json').then((response) => {
-        state.itemList = response.data.data.message
+        // state.itemList = response.data.data.message
+        response.data.data.message.some(item=>{
+          // console.log(item.title)
+          // console.log(state)
+          console.log(localStorage.getItem('searchoneList'))
+          if (item.title.includes(localStorage.getItem('searchoneList'))) {
+            state.itemList = item.shop
+            console.log(localStorage)
+          }
+        })
         // console.log(response.data.data.message)
       })
     },
