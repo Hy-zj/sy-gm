@@ -83,7 +83,6 @@ export default {
     },
     scrollFunc(e) {
       let h = document.documentElement.scrollTop;
-      console.log(h)
       if (this.show) {
         if (h >= 60) {
           document.querySelector(".gg-header").style.top = "-60px";
