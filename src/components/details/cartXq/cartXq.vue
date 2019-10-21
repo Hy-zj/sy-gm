@@ -37,11 +37,12 @@
             <div class="cartXq-main-shop-list">
               <div class="cartXq-main-shop-list-top">
                 <div class="cartXq-main-shop-list-top-left">
-                  <van-checkbox v-model="checked" class="checkbox" checked-color="red"></van-checkbox>
+                  <!-- 定义上屏的状态然后添加change事件并传递商品id和状态 -->
+                  <van-checkbox  @click="selectedChanged(item.id,$store.getters.getGoodsSelected[item.id])" :value="$store.getters.getGoodsSelected[item.id]" class="checkbox" checked-color="red"></van-checkbox>
                 </div>
                 <div class="cartXq-main-shop-list-top-right">
                   <div class="cartXq-main-shop-list-top-right-left">
-                    <img src="//gfs17.gomein.net.cn/T1cNbQBvL_1RCvBVdK_250.jpg?v=2" alt />
+                    <img :src="item.imgurl" alt />
                   </div>
                   <div class="cartXq-main-shop-list-top-right-right">
                     <div
