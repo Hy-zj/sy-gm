@@ -1,6 +1,6 @@
 <template>
   <div class="searchListone-footer">
-    <div class="searchListone-footer-item" v-for="item1 in filterData" :key="item1.id">
+    <div class="searchListone-footer-item" v-for="item1 in item" :key="item1.id">
       <router-link
         :to="{ name: 'detail', params: { userId: item1.id,name: item1.title, price: item1.price, desc: item1.desc, count: item1.count,imgurl:item1.imgurl}}"
       >
@@ -31,25 +31,26 @@ export default {
     // console.log(this.item);
   },
   computed: {
-    filterData() {
-      return this.item.filter(item => {
-        return (
-          this.searchText === null ||
-          item.title.toLowerCase().indexOf(this.searchText.toLowerCase()) >
-            -1 ||
-          item.desc.toLowerCase().indexOf(this.searchText.toLowerCase()) > -1
-        );
-      });
-    },
-    searchText() {
-      console.log(typeof this.$store.state.searchoneList);
-      return typeof this.$store.state.searchoneList === "object" &&
-        this.$store.state.searchoneList.length > 0
-        ? this.$store.state.searchoneList[
-            this.$store.state.searchoneList.length - 1
-          ]
-        : null;
-    }
+  //   filterData() {
+  //     return this.item.filter(item => {
+  //       return (
+  //         this.searchText === null ||
+  //         item.title.toLowerCase().indexOf(this.searchText.toLowerCase()) >
+  //           -1 ||
+  //         item.desc.toLowerCase().indexOf(this.searchText.toLowerCase()) > -1
+  //       );
+  //     });
+  //   },
+  //   searchText() {
+  //     console.log(typeof this.$store.state.searchoneList);
+  //     return typeof this.$store.state.searchoneList === "object" &&
+  //       this.$store.state.searchoneList.length > 0
+  //       ? this.$store.state.searchoneList[
+  //           this.$store.state.searchoneList.length - 1
+  //         ]
+  //       : null;
+  //   }
+  // },
   },
   methods: {
     // getData() {
