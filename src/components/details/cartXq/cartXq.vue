@@ -5,7 +5,7 @@
       <div class="cartXq-header">
         <div class="cartHeader">
           <div class="cartHeader-one" @click="change">
-            <van-icon name="arrow-left" />
+            <van-icon name="arrow-left"/>
           </div>
           <div class="cartHeader-two">购物车</div>
           <div class="cartHeader-tree">
