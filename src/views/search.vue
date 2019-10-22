@@ -14,7 +14,7 @@
             placeholder="冰箱洗衣机套购7.5折起"
             v-model="$store.state.message"
             @mousedown="changeone"
-            @keyup.enter="tiaozhuan()"
+            @keyup.enter="tiaozhuan"
             @input="changelist"
           />
           <div class="searchone-icon">
