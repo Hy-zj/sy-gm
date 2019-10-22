@@ -35,13 +35,6 @@ export default {
     backHome () {
       this.$router.push('/search')
     }
-  },
-  mounted() {
-    document.addEventListener("click", e => {
-      if (!this.$el.contains(e.target)) {
-        this.tab = false;
-      }
-    });
   }
 };
 </script>

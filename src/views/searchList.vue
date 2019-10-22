@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="list_topSearch_header" v-if="msg">
-      <router-link to="/home">
+      <router-link to="/search">
         <van-icon name="arrow-left" class="arrow-left"></van-icon>
       </router-link>
       <input
@@ -50,11 +50,7 @@
           @click="gmtree"
           ref="headertwo"
         >团抢商品</div>
-        <div class="searchList-main-header-tree">
-          <van-dropdown-menu>
-            <van-dropdown-item v-model="value1" :options="option1" />
-          </van-dropdown-menu>
-        </div>
+        <div class="searchList-main-header-tree">全部</div>
       </div>
     </div>
     <component :item="$store.state.itemList" v-bind:is="currentTabComponent"></component>
@@ -140,15 +136,17 @@ export default {
       }
     },
     getdataList() {
-      this.$store.commit("getdata");
+      this.$store.commit("getdata", this.$route.query.name);
     }
   },
   mounted() {
-    document.addEventListener("click", e => {
-      if (!this.$el.contains(e.target)) {
-        this.tab = false;
-      }
-    });
+    // document.addEventListener("click", e => {
+    //   console.log(e)
+    //   if (!this.$el.contains(e.target)) {
+    //     console.log('1111')
+    //     this.tab = false;
+    //   }
+    // });
 
     //往下划效果
     window.addEventListener("scroll", this.scrollToTop);

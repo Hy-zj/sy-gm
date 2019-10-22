@@ -20,7 +20,7 @@
         <div class="cartXq-main-conter">
           <div class="cartXq-main-nav" ref="cartXqOne" v-if="btnFlag">
             <div class="cartXq-main-nav-one">
-              <van-checkbox v-model="checked" class="checkbox" checked-color="red"></van-checkbox>
+              <van-checkbox v-model="selectAll" class="checkbox" checked-color="red"></van-checkbox>
             </div>
             <div class="cartXq-main-nav-two">
               <img src="//gfs10.gomein.net.cn/T1HPJTBCb_1RCvBVdK.png" alt />
@@ -87,7 +87,7 @@
           button-text="提交订单"
           @submit="onSubmit"
         >
-          <van-checkbox :value="checked" class="checkbox" checked-color="red" @click="allChange">全选</van-checkbox>
+          <van-checkbox v-model="selectAll" class="checkbox" checked-color="red" @click="allChange">全选</van-checkbox>
         </van-submit-bar>
       </div>
     </div>
@@ -113,7 +113,7 @@ export default {
       btnFlag: true,
       checked: true,
       tab: false,
-      selectAll: false,
+      selectAll: true,
       //购物车的商品数据
       goodsList: [],
       bgcolor: "red"
@@ -196,6 +196,14 @@ export default {
       this.$store.commit("removeFormCar", id);
     },
     //定义单选事件
+    // selectedChanged(id, val) {
+    //   console.log(val);
+    //   val = !val;
+    //   this.$store.commit("updataGoodsSelected", {
+    //     id,
+    //     selected: val
+    //   });
+    // },
     selectedChanged(id, val) {
       console.log(val);
       val = !val;
@@ -203,11 +211,23 @@ export default {
         id,
         selected: val
       });
+      let flag = true;
+      this.$store.state.car.forEach(item => {
+        if (!item.selected) {
+          flag = false;
+        }
+      });
+      this.selectAll = flag;
     },
     //定义全选点击事件
+    // allChange() {
+    //   this.checked = !this.checked;
+    //   console.log(this.$refs.allselected);
+    // }
     allChange() {
-      this.checked = !this.checked;
-      console.log(this.$refs.allselected);
+      this.$store.commit("goodsAllSelect", {
+        status: !this.selectAll
+      });
     }
   },
   created() {

@@ -5,7 +5,14 @@
 </template>
 <script>
 export default {
-  name: "app"
+  name: "app",
+  mounted() {
+    document.addEventListener("click", e => {
+      if (!this.$el.contains(e.target)) {
+        this.tab = false;
+      }
+    });
+  }
 };
 </script>
 <style>

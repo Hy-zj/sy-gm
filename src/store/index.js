@@ -37,7 +37,7 @@ const store = new Vuex.Store({
       })
     },
     //获取商品数据
-    getdata(state) {
+    getdata(state,val) {
       Vue.axios.get('/data/cardata.json').then((response) => {
         // state.itemList = response.data.data.message
         response.data.data.message.some(item=>{
@@ -45,9 +45,10 @@ const store = new Vuex.Store({
           // console.log(state)
           // let num = localStorage.getItem('searchoneList')
           // console.log(num)
-          if (item.title.includes(state.searchoneList[state.searchoneList.length-1])) {
+          if ((item.title.includes(state.searchoneList[state.searchoneList.length-1])) || (item.title.includes(val))) {
             state.itemList = item.shop
             // console.log(localStorage)
+            console.log(state.itemList)
           }
         })
         // console.log(response.data.data.message)
@@ -141,6 +142,7 @@ const store = new Vuex.Store({
     goodsAllSelect(state, status) {
       state.car.forEach(item => {
         item.selected = status.status
+        // console.log('1111')
       })
     },
     //添加搜索信息方法

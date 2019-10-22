@@ -54,6 +54,7 @@ export default {
   top: 53px;
   font-size: 12px;
   opacity: 0.9;
+  z-index: 999;
 }
 
 .x {
