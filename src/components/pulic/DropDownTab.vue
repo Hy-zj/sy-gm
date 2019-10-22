@@ -84,11 +84,12 @@ export default {
 }
 .tab_container_list .tab_to {
   width: 125px;
-  margin-left: 15px;
   padding: 14px 0;
   font-size: 16px;
   color: #00050a;
   border-bottom: 1px solid rgb(223, 223, 223);
+  text-align: start;
+  margin-left: 20px;
 }
 .y,
 .z {
