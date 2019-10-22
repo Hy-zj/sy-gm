@@ -2,10 +2,12 @@
   <div class="detail">
     <detailsTop></detailsTop>
     <detailsFooter class="details_foot"></detailsFooter>
+    <backTop></backTop>
   </div>
 </template>
 
 <script>
+import backTop from '../components/home/backTop'
 import detailsTop from "../components/details/detailTop";
 
 import detailsFooter from "../components/details/detailsFooter";
@@ -13,7 +15,8 @@ export default {
   name: "detail",
   components: {
     detailsTop,
-    detailsFooter
+    detailsFooter,
+    backTop
   }
 };
 </script>
