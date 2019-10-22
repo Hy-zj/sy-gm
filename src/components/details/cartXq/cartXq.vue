@@ -89,6 +89,7 @@
           <van-checkbox v-model="selectAll" class="checkbox" checked-color="red" @click="allChange">全选</van-checkbox>
         </van-submit-bar>
       </div>
+      <backTop></backTop>
     </div>
   </div>
 </template>
@@ -99,6 +100,7 @@ import { Checkbox, SubmitBar, Icon, Stepper } from "vant";
 import axios from "axios";
 import VueAxios from "vue-axios";
 import stapers from "../../pulic/stapers";
+import backTop from '../../home/backTop'
 
 Vue.use(VueAxios, axios);
 
@@ -125,7 +127,8 @@ export default {
     [Icon.name]: Icon,
     [Stepper.name]: Stepper,
     DropDownTab,
-    stapers
+    stapers,
+    backTop
   },
   mounted() {
     let flag = true;
