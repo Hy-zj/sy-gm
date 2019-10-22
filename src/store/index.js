@@ -7,7 +7,7 @@ Vue.use(VueAxios, axios)
 Vue.use(Vuex)
 //我们将json字符串转化为对象
 //每次进入网站是先读取本地存储的数据如果没有就给个空数组
-var car = JSON.parse(localStorage.getItem('car') || '[]')
+let car = JSON.parse(localStorage.getItem('car') || '[]')
 const store = new Vuex.Store({
   state: {
     itemObj: {},
