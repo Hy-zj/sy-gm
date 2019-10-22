@@ -87,7 +87,7 @@ export default {
       document.querySelector("input").placeholder = "";
     },
     changelist() {
-      if (this.$store.state.message.length > 0) {
+      if (this.$store.state.message) {
         this.msg = true;
       } else {
         this.msg = false;
