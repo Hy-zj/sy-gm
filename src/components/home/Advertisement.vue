@@ -1,10 +1,11 @@
 <template>
+<!-- 首页广告 -->
   <div class="gg-header">
     <div class="ad_one">
-      <img src="https://css.gomein.net.cn/plus/style/appDown/images/close.png" @click="showAd" />
+      <img src="https://css.gomein.net.cn/plus/style/appDown/images/close.png" />
     </div>
     <div class="ad_two">
-      <img src="https://gfs9.gomein.net.cn/T1VnKvB7_T1RCvBVdK.png" alt />
+      <img src="https://gfs9.gomein.net.cn/T1VnKvB7_T1RCvBVdK.png"/>
     </div>
     <div class="ad_three">
       <p>注册享好礼</p>
@@ -16,14 +17,7 @@
 
 <script>
 export default {
-  name: "Advertisement",
-  methods:{
-    // showAd() {
-    //   this.show = false;
-    //   document.querySelector(".fixed").style.top = "0px";
-    //   document.querySelector(".list_container").style.marginTop = "44px";
-    // }
-  }
+  name: "Advertisement"
 };
 </script>
 

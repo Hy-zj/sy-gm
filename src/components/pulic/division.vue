@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 详情页面的分割线 -->
       <div class="division"></div>
   </div>
 </template>

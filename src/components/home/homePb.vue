@@ -1,4 +1,5 @@
 <template>
+<!-- 首页猜你喜欢 -->
   <div>
     <div class="homePb">
       <div class="homePb-homePb-img">
@@ -111,7 +112,6 @@ export default {
 .homePb {
   width: 100%;
   height: 100%;
-  /* margin: 15px 15px; */
   border: 1px solid #f2f2f2;
   display: flex;
   border-radius: 8px;

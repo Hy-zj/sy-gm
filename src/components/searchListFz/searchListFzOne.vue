@@ -1,4 +1,5 @@
 <template>
+<!-- 默认渲染的动态组件 -->
   <div class="searchListone-footer">
     <div class="searchListone-footer-item" v-for="item1 in item" :key="item1.id">
       <router-link
@@ -24,39 +25,7 @@ export default {
   data() {
     return {};
   },
-  props: ["item"],
-  mounted() {
-    // this.getData();
-    // console.log(this.$store.state.searchoneList);
-    // console.log(this.item);
-  },
-  computed: {
-  //   filterData() {
-  //     return this.item.filter(item => {
-  //       return (
-  //         this.searchText === null ||
-  //         item.title.toLowerCase().indexOf(this.searchText.toLowerCase()) >
-  //           -1 ||
-  //         item.desc.toLowerCase().indexOf(this.searchText.toLowerCase()) > -1
-  //       );
-  //     });
-  //   },
-  //   searchText() {
-  //     console.log(typeof this.$store.state.searchoneList);
-  //     return typeof this.$store.state.searchoneList === "object" &&
-  //       this.$store.state.searchoneList.length > 0?
-  //        this.$store.state.searchoneList[
-  //           this.$store.state.searchoneList.length - 1
-  //         ]
-  //       : null;
-  //   }
-  // },
-  },
-  methods: {
-    // getData() {
-    //   this.$store.commit("insert");
-    // }
-  }
+  props: ["item"]
 };
 </script>
 

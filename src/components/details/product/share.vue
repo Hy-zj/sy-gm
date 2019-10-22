@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页分享 -->
   <div class="product_share">
     <div class="product_share_top">
       <div class="product_share_left">

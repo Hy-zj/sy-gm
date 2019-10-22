@@ -1,4 +1,5 @@
 <template>
+<!-- 顾客评价 -->
   <div class="one_customer">
     <div class="top">
       <div class="left">评价（2.5万+）</div>

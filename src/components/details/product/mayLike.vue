@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页swiper手动滚动区 -->
   <div class="myay_you_like">
     <div class="top">猜你喜欢</div>
     <div class="like_list">

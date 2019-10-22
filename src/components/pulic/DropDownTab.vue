@@ -1,4 +1,5 @@
 <template>
+<!-- 弹出框标签页 -->
   <div class="tab_container">
     <div class="x">
       <router-link to="/home">

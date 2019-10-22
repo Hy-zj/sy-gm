@@ -16,8 +16,8 @@ Vue.use(Icon);
 export default {
   name: "loginHeader",
   methods: {
-    change () {
-      this.$router.push('/home')
+    change() {
+      this.$router.push("/home");
     }
   }
 };

@@ -1,4 +1,5 @@
 <template>
+<!-- 购物车导航 -->
   <div>
     <div class="cartNav">
     <div class="cartNav-top">

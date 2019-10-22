@@ -5,14 +5,12 @@
         icon="shop-o"
         size="23px"
         text="店铺"
-        @click="onClickIcon"
         class="detail_footer_icon"
       />
       <van-goods-action-icon
         icon="like-o"
         size="23px"
         text="收藏"
-        @click="onClickIcon"
         class="detail_footer_icon"
       />
       <van-goods-action-icon
@@ -47,30 +45,12 @@ Vue.use(GoodsAction)
   .use(GoodsActionIcon)
   .use(GoodsActionButton);
 export default {
-  props: { goodId: { required: true } },
   name: "detailsFooter",
-  data() {
-    return {
-      
-    };
-  },
-  computed: {
-    
-  },
   methods: {
-    onClickButton() {
-     
-    },
-    onClickIcon() {},
     //添加到购物车
     addToShopCar(){
-      // this.ballFlag = !this.ballFlag
       //只携带信息
       var goodsInfo = {
-        // id: this.id,
-        // count : this.selectedCount,
-        // price: this.goodsInfo.sell_price,
-        // selected: true
         id: this.$route.params.userId,
         count: this.$route.params.count,
         price: this.$route.params.price,

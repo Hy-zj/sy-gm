@@ -1,4 +1,5 @@
 <template>
+<!-- 商品以旧换新 -->
   <div class="new_old">
     <div class="left">
       <p>

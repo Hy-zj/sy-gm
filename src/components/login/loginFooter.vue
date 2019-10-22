@@ -1,8 +1,6 @@
 <template>
   <div class="loginFooter">
     <van-divider :style="{ color: '#999', borderColor: '#999', padding: '0' }">你可能喜欢</van-divider>
-    <!-- <div class="loginFooter-title"> -->
-    <!-- </div> -->
     <div class="loginFooter-list">
       <div class="loginFooter-main">
         <ul class="loginFooter-list">

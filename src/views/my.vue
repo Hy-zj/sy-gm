@@ -26,13 +26,11 @@
             <div class="my-account_login">
               <div class="my-user">
                 <span class="my-icon_user"></span>
-                <!-- v-model="$store.state.loginObj.name" -->
                 <input type="text"  id="inp"  placeholder="手机号/邮箱/用户名/门店会员卡号"  v-model="$store.state.loginObj.name"  />
                 <span class="my-icon_clear" @click="clearEvent1"></span>
               </div>
               <div class="my-pwd">
                 <span class="my-icon_password"></span>
-                <!-- v-model="$store.state.loginObj.password" -->
                 <input  type="password"  placeholder="请输入密码"  v-model="$store.state.loginObj.password"  @input="change"  id="psd"
                 />
                 <span class="my-icon_clear my_icon_clear" @click="clearEvent2"></span>
@@ -106,7 +104,6 @@ export default {
   },
   methods: {
     change() {
-      console.log(window.document.getElementsByClassName("my-btn"));
       var vant = window.document.getElementsByClassName("my-btn")[0];
       vant.style.cssText = "background-color: #F20C59;color: #333;";
     },

@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页导航栏 -->
   <div>
     <div class="detailTop_top">
       <div class="top_left">

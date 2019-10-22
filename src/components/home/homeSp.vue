@@ -1,4 +1,5 @@
 <template>
+<!-- 首页国美秒杀 -->
  <div>
     <div class="homeSp">
     <div class="homeSp-homeSp-left">
@@ -68,7 +69,6 @@ export default {
 .homeSp {
   width: 100%;
   height: 100%;
-  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;

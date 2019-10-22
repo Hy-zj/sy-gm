@@ -1,4 +1,5 @@
 <template>
+<!-- 首页有好货广告 -->
   <div>
     <div class="homeSpone">
     <div class="homeSpone-homeSpone-left">
@@ -32,7 +33,6 @@ export default {
 .homeSpone {
   width: 100%;
   height: 100%;
-  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;

@@ -1,4 +1,5 @@
 <template>
+<!-- 购物车主体 -->
   <div>
     <div class="cartMain">
       <div class="cartMain-img">

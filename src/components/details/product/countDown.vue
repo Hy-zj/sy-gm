@@ -1,4 +1,5 @@
 <template>
+<!-- 商品抢购倒计时 -->
   <div class="product_count_down">
     <div class="product_count_down_left">
       ￥

@@ -1,4 +1,5 @@
 <template>
+<!-- 首页国美头条 -->
   <div>
     <div class="homeDt">
       <div class="homeDt-homeDt-left">

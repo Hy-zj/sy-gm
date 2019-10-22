@@ -43,7 +43,7 @@
           <div class="searchone-footer">
             <ul>
               <li>搜索历史</li>
-              <li v-for="item in $store.state.searchoneList" :key="item.id">
+              <li v-for="(item,index) in $store.state.searchoneList" :key="index">
                 <router-link :to="{path: '/searchList', query: {name: item}}">
                   {{item}}
                 </router-link>
@@ -70,8 +70,6 @@ export default {
   data() {
     return {
       show: true,
-      // searchoneList:　[],
-      // message : ""
       msg: false
     };
   },
@@ -96,8 +94,6 @@ export default {
       }
     },
     tiaozhuan() {
-      // this.$router.push("/home")
-      // this.searchoneList.push(this.message)
       this.$store.commit("runGo");
       this.$store.commit("delShop");
       this.$router.push("/searchList");

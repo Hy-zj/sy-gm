@@ -1,4 +1,5 @@
 <template>
+<!-- 详情商品评价上部 -->
   <div class="show_img">
     <div class="top">
       <div class="left">有图评价（575）</div>

@@ -1,52 +1,55 @@
 <template>
- <div>
+<!-- 首页页脚 -->
+  <div>
     <div class="router-wrap">
-    <div class="router-wrap-one">
-      <router-link to="/home" tag="span">
-        <div class="router-wrap-img">
-          <img src="//gfs10.gomein.net.cn/wireless/T1JuEXBm_v1RCvBVdK_48_48.png" alt />
-        </div>
-        <div class="router-wrap-desc">首页</div>
-      </router-link>
-    </div>
-    <div class="router-wrap-two">
-      <router-link to="/list" tag="span">
-        <div class="router-wrap-img">
-          <img src="//gfs11.gomein.net.cn/wireless/T1SudXB7CT1RCvBVdK_48_48.png" alt />
-        </div>
-        <div class="router-wrap-desc" style="color: #999">分类</div>
-      </router-link>
-    </div>
-    <div class="router-wrap-tree">
-      <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201909/26/saleJ8gDXKVNgH3.html"><div class="router-wrap-img">
-          <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt />
-        </div>
-        <div class="router-wrap-desc" style="color: #999">优选</div></a>
-    </div>
-    <div class="router-wrap-four">
-      <router-link to="/cart" tag="span">
-        <div class="router-wrap-img">
-          <img src="//gfs13.gomein.net.cn/wireless/T1IiDXB4xT1RCvBVdK_48_48.png" alt />
-        </div>
-        <div class="router-wrap-desc" style="color: #999">购物车</div>
-      </router-link>
-    </div>
-    <div class="router-wrap-five">
-      <router-link to="/my" tag="span">
-        <div class="router-wrap-img">
-          <img src="//gfs11.gomein.net.cn/wireless/T1.fdXBKZT1RCvBVdK_48_48.png" alt />
-        </div>
-        <div class="router-wrap-desc" style="color: #999">我的</div>
-      </router-link>
+      <div class="router-wrap-one">
+        <router-link to="/home" tag="span">
+          <div class="router-wrap-img">
+            <img src="//gfs10.gomein.net.cn/wireless/T1JuEXBm_v1RCvBVdK_48_48.png" alt />
+          </div>
+          <div class="router-wrap-desc">首页</div>
+        </router-link>
+      </div>
+      <div class="router-wrap-two">
+        <router-link to="/list" tag="span">
+          <div class="router-wrap-img">
+            <img src="//gfs11.gomein.net.cn/wireless/T1SudXB7CT1RCvBVdK_48_48.png" alt />
+          </div>
+          <div class="router-wrap-desc" style="color: #999">分类</div>
+        </router-link>
+      </div>
+      <div class="router-wrap-tree">
+        <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201909/26/saleJ8gDXKVNgH3.html">
+          <div class="router-wrap-img">
+            <img src="//gfs10.gomein.net.cn/wireless/T1iihXBjWT1RCvBVdK_48_48.png" alt />
+          </div>
+          <div class="router-wrap-desc" style="color: #999">优选</div>
+        </a>
+      </div>
+      <div class="router-wrap-four">
+        <router-link to="/cart" tag="span">
+          <div class="router-wrap-img">
+            <img src="//gfs13.gomein.net.cn/wireless/T1IiDXB4xT1RCvBVdK_48_48.png" alt />
+          </div>
+          <div class="router-wrap-desc" style="color: #999">购物车</div>
+        </router-link>
+      </div>
+      <div class="router-wrap-five">
+        <router-link to="/my" tag="span">
+          <div class="router-wrap-img">
+            <img src="//gfs11.gomein.net.cn/wireless/T1.fdXBKZT1RCvBVdK_48_48.png" alt />
+          </div>
+          <div class="router-wrap-desc" style="color: #999">我的</div>
+        </router-link>
+      </div>
     </div>
   </div>
- </div>
 </template>
 
 <script>
 export default {
   name: "routerFooter"
-}
+};
 </script>
 
 <style>
@@ -59,9 +62,7 @@ export default {
   display: flex;
   background: #fff;
   border-top: 1px solid #ffffff;
-   z-index: 10;
-  /* transform: translateZ(0);
-  overflow-y: auto; */
+  z-index: 10;
 }
 .router-wrap-one {
   flex: 1;

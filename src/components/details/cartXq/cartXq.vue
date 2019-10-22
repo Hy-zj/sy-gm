@@ -1,4 +1,5 @@
 <template>
+<!-- 购物车提交页面 -->
   <div>
     <div class="cartXq">
       <div class="cartXq-header">
@@ -56,8 +57,6 @@
                     <div class="cartXq-main-shop-list-top-right-right-four">
                       <span class="cartXq-main-shop-list-top-right-right-four-left">￥{{item.price}}</span>
                       <span class="cartXq-main-shop-list-top-right-right-four-right">
-                        <!-- <van-stepper ref="numbox" @change="countChange" :value="$store.getters.getGoodsCount[item.id]" button-size="18px" />
-                        $store.getters.getGoodsCount[item.id]-->
                         <stapers
                           :goodsid="item.id"
                           :initcount="$store.getters.getGoodsCount[item.id]"
@@ -168,20 +167,14 @@ export default {
       if (idArr.length <= 0) {
         return;
       }
-      // console.log('1111111')
       //获取购物车上屏列表
-      //+ idArr.join(",")
       //对加入购物车的产品进行赛选
       Vue.axios.get("/data/cardata.json").then(response => {
-        // console.log(response.data.data.message)
         if (response.data.code === 0) {
           response.data.data.message.some((item, index) => {
-            // console.log(item.shop)
-            // console.log(idArr)
             item.shop.some(item => {
               if (idArr.join(",").includes(item.id)) {
                 this.goodsList.push(item);
-                console.log(this.goodsList);
               }
             });
           });
@@ -196,14 +189,6 @@ export default {
       this.$store.commit("removeFormCar", id);
     },
     //定义单选事件
-    // selectedChanged(id, val) {
-    //   console.log(val);
-    //   val = !val;
-    //   this.$store.commit("updataGoodsSelected", {
-    //     id,
-    //     selected: val
-    //   });
-    // },
     selectedChanged(id, val) {
       console.log(val);
       val = !val;
@@ -220,10 +205,6 @@ export default {
       this.selectAll = flag;
     },
     //定义全选点击事件
-    // allChange() {
-    //   this.checked = !this.checked;
-    //   console.log(this.$refs.allselected);
-    // }
     allChange() {
       this.$store.commit("goodsAllSelect", {
         status: !this.selectAll
@@ -234,9 +215,6 @@ export default {
     window.addEventListener("scroll", this.scollTop);
     //调用获取购物车商品数据的方法
     this.getGoodsList();
-  },
-  mounted() {
-    // console.log(this.$store.getters.getGoodsSelected[item.id])
   }
 };
 </script>

@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页中手机详情 -->
   <div class="product_show">
     <div class="product_item">
       <div class="product_img">

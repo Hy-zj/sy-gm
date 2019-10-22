@@ -1,4 +1,5 @@
 <template>
+<!-- 首页轮播图 -->
   <div>
     <div class="homeSwiper">
     <van-swipe :autoplay="3000" indicator-color="white">
