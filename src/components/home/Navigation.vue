@@ -8,7 +8,7 @@
       </div>
       <div class="Navigation-idx-two">
         <van-icon name="search" class="Navigation-idx-icon" />
-        <input type="text" value="华为Mate 30新品上市" @click="tiaozhuan" />
+        <input type="text" value="华为Mate 30新品上市" @click="tiao" />
       </div>
       <div class="Navigation-idx-tree">
         <router-link to="/cart">
@@ -32,7 +32,7 @@ Vue.use(Icon);
 export default {
   name: "Navigation",
   methods: {
-    tiaozhuan () {
+    tiao () {
       this.$router.push('/search')
     }
   }

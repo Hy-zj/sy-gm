@@ -7,7 +7,7 @@
       <input
         type="text"
         v-model="$store.state.searchoneList[$store.state.searchoneList.length-1]"
-        @click="backHome"
+        @click="backHome($store.state.searchoneList[$store.state.searchoneList.length-1])"
       />
       <van-icon name="search" class="search" />
       <img
@@ -97,8 +97,8 @@ export default {
     toggle() {
       this.tab = !this.tab;
     },
-    backHome() {
-      this.$router.push("/search");
+    backHome(val) {
+      this.$router.push({path: "/search", query: {name: val}});
     },
     //动态组件跳转
     gmtwo() {
