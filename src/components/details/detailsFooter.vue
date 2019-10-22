@@ -45,16 +45,7 @@ Vue.use(GoodsAction)
   .use(GoodsActionIcon)
   .use(GoodsActionButton);
 export default {
-  props: { goodId: { required: true } },
   name: "detailsFooter",
-  data() {
-    return {
-      
-    };
-  },
-  computed: {
-    
-  },
   methods: {
     //添加到购物车
     addToShopCar(){

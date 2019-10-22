@@ -109,14 +109,10 @@ export default {
     gmtree() {
       this.msglog1 = !this.msglog1;
       this.currentTabComponent = "searchListFzTree";
-      console.log(this.$refs.headertwo.removeAttribute("color"));
     },
     scrollToTop() {
       const that = this;
       let scrollTop = window.pageYOffset;
-      //  ||
-      // document.documentElement.scrollTop ||
-      // document.body.scrollTop;
       that.scrollTop = scrollTop;
       if (that.scrollTop > 85) {
         var NUM = document.querySelector(".searchList-main-header");
@@ -140,18 +136,8 @@ export default {
     }
   },
   mounted() {
-    // document.addEventListener("click", e => {
-    //   console.log(e)
-    //   if (!this.$el.contains(e.target)) {
-    //     console.log('1111')
-    //     this.tab = false;
-    //   }
-    // });
-
     //往下划效果
     window.addEventListener("scroll", this.scrollToTop);
-    console.log((this.$refs.searchList.style.position = "fixed"));
-    //store.dispatch('increment')
   },
   created() {
     //调用方法获取数据

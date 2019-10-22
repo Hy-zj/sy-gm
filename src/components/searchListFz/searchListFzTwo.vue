@@ -1,4 +1,5 @@
 <template>
+<!-- 动态组件3 -->
   <div class="searchList-footer">
     <div v-if="tabList[activeIndex]">
     <div class="searchList-footer-item" v-for="son in activeData.son[1].children" :key="son.name">

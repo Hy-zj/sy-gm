@@ -1,4 +1,5 @@
 <template>
+<!-- 送货地址信息 -->
   <div class="to_address">
     <div class="to_address_top">
       <div class="to">送至</div>

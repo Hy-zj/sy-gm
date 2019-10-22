@@ -1,4 +1,5 @@
 <template>
+<!-- 商品信息轮播图 -->
   <div class="product_swiper">
     <van-swipe @change="onChange">
       <van-swipe-item><img :src="$route.params.imgurl" alt=""></van-swipe-item>

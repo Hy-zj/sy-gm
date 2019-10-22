@@ -1,4 +1,5 @@
 <template>
+<!-- 首页两个动图广告 -->
   <div>
     <div class="homeGg">
     <ul class="homeGg-list">

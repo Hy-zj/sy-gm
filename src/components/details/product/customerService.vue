@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页客服信息 -->
   <div class="customer_service">
     <div class="top">
       <div class="left">

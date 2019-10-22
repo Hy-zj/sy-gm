@@ -1,8 +1,7 @@
 <template>
   <div class="detail">
     <detailsTop></detailsTop>
-
-    <detailsFooter :goodId="id" class="details_foot"></detailsFooter>
+    <detailsFooter class="details_foot"></detailsFooter>
   </div>
 </template>
 
@@ -14,19 +13,13 @@ export default {
   name: "detail",
   components: {
     detailsTop,
-    detailsFooter,
-  },
-  data () {
-    return {
-      id:1002//实例值
-    }
+    detailsFooter
   }
-  
 };
 </script>
 
 <style scoped>
-.detail{
+.detail {
   height: 100%;
   padding-bottom: 60px;
 }

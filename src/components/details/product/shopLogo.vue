@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页商品店铺logo -->
   <div class="shop_logo">
     <div class="shop_logo_img">
       <img src="https://gfs13.gomein.net.cn/T1ArWjBXdT1RCvBVdK.jpg" alt />

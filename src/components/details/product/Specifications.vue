@@ -1,4 +1,5 @@
 <template>
+<!-- 规格参数 -->
   <div class="specifications">
     <div class="packaging">基本信息</div>
     <div class="spec_list">

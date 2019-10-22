@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页店铺地址 -->
   <div class="shop_address">
     <span class="chaoyang">朝阳区门店</span>
     <span>北京国美西坝河店</span>

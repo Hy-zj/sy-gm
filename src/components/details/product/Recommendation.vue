@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页已选商品信息 -->
   <div class="product_selected">
      <div class="product_selected_top">
          <div class="product_selected_top_left">已选</div>

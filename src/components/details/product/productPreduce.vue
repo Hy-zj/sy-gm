@@ -1,4 +1,5 @@
 <template>
+<!-- 商品介绍 -->
   <div class="img_container">
       <img src="https://gfs10.gomein.net.cn/T1GtbXByWT1RCvBVdK" alt="">
       <img src="https://gfs10.gomein.net.cn/T1btYXBbbT1RCvBVdK" alt="">

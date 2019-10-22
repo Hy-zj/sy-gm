@@ -1,10 +1,9 @@
 <template>
+  <!-- 购物车提交页面的步进器 -->
   <div>
     <div class="stapers">
       <button class="stapers-button" type="button" @click="del">-</button>
-      <input type="text" @change="countChange" ref="numbox" :value="initcount"/>
-      <!-- <span>{{initcount}}</span> -->
-        <!-- :value="initcount" -->
+      <input type="text" @change="countChange" ref="numbox" :value="initcount" />
       <button class="stapers-button" type="button" @click="add">+</button>
     </div>
   </div>
@@ -17,8 +16,6 @@ export default {
   methods: {
     //步进器上监听事件
     countChange() {
-      // console.log(this.$refs.numbox.value)
-      console.log('ssssss')
       //每次修改完商品的数量，都把他更新到最新的state中
       this.$store.commit("updataGoodsInfo", {
         id: this.goodsid,
@@ -27,17 +24,15 @@ export default {
     },
     //添加数量
     add(goodsid) {
-      this.$store.commit("addnum",this.goodsid);
+      this.$store.commit("addnum", this.goodsid);
     },
     //减少数量
     del() {
-        this.$store.commit("delnum",this.goodsid);
+      this.$store.commit("delnum", this.goodsid);
     }
   },
-  mounted(){
-    this.countChange
-    //  console.log(this.$refs.numbox.value)
-    console.log(this.$store.getters.getAllCount)
+  mounted() {
+    this.countChange();
   }
 };
 </script>

@@ -1,4 +1,5 @@
 <template>
+<!-- 详情页评价 -->
   <div>
     <div class="evaluate">
       <div class="evaluate-nav">

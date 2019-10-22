@@ -1,4 +1,5 @@
 <template>
+  <!-- 首页回到顶部区域 -->
   <div class="backTop" @click="backTop" v-if="btnFlag">
     <div>
       <van-icon name="arrow-up" />

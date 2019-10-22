@@ -1,4 +1,5 @@
 <template>
+<!-- 首页精选活动 -->
   <div>
     <div class="homeJx">
     <div class="homeJx-homeJx-top">
@@ -34,7 +35,6 @@ export default {
 .homeJx {
   width: 100%;
   height: 100%;
-  /* margin: 0 15px; */
   border: 1px solid #f2f2f2;
   background: white;
   display: flex;

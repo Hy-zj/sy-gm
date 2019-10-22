@@ -1,4 +1,5 @@
 <template>
+<!-- 商品包装售后 -->
   <div class="after_sale">
     <div class="packaging">包装清单</div>
     <div class="description">燃气灶x1，说明书x1，合格证x1</div>

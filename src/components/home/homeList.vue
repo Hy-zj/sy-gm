@@ -1,4 +1,5 @@
 <template>
+<!-- 首页导航图标 -->
   <div>
     <div class="homeList">
     <div v-for="item in homeList" :key="item.id" class="homeList-home-list">

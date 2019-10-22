@@ -21,14 +21,8 @@ const store = new Vuex.Store({
     message: "",
     //购物车数据
     car: car, //将购物车中的数据放入到这个里面
-    // count: 0
     //搜索页面
     itemList: []
-  },
-  actions: {
-    // increment (context) {
-    //   context.commit('getdata')
-    // }
   },
   mutations: {
     insert(state) {
@@ -39,35 +33,23 @@ const store = new Vuex.Store({
     //获取商品数据
     getdata(state, val) {
       Vue.axios.get('/data/cardata.json').then((response) => {
-        // state.itemList = response.data.data.message
         response.data.data.message.some(item => {
-          // console.log(item.title)
-          // console.log(state)
-          // let num = localStorage.getItem('searchoneList')
-          // console.log(num)
           if ((item.title.includes(state.searchoneList[state.searchoneList.length - 1])) || (item.title.includes(val))) {
             state.itemList = item.shop
-            // console.log(localStorage)
-            // console.log(state.itemList)
           }
-
         })
+        //下面是路由跳转时携带的匹配参数用于渲染搜索弹出列表
         state.message = val
+        //每次更改完同步到本地存储中
         state.searchoneList.push(state.message)
         localStorage.setItem('searchoneList', state.searchoneList)
-        // console.log(response.data.data.message)
       })
     },
-    //添加购物车功能
-    //计数
-    // increment(state){
-    //   state.count++
-    // },
     //添加到购物车
     addToCar(state, goodsInfo) {
       //如果购物车中之前有这个商品 就加数量
       //如果没有就把商品push到car中
-      //假设我们开始购物车没油这个数据
+      //假设我们开始购物车没有这个数据
       var flag = false
       state.car.some(item => {
         if (item.id == goodsInfo.id) {
@@ -105,14 +87,13 @@ const store = new Vuex.Store({
           state.car.splice(i, 1)
           return true
         }
-        // console.log('ok')
       })
       //将删除完成后的商品的数据之后就把他存到本地
       localStorage.setItem('car', JSON.stringify(state.car))
     },
     //添加商品数量
     addnum(state, goodsid) {
-      // console.log(goodsid)
+      //通过携带当前商品的id通过按钮加1
       state.car.some((item) => {
         if (item.id == goodsid) {
           item.count++
@@ -122,7 +103,6 @@ const store = new Vuex.Store({
     },
     //减少商品
     delnum(state, goodsid) {
-      // console.log(goodsid)
       state.car.some((item) => {
         if (item.id == goodsid) {
           if (item.count > 1) {
@@ -143,10 +123,10 @@ const store = new Vuex.Store({
       //将最新的商品的数据之后就把他存到本地
       localStorage.setItem('car', JSON.stringify(state.car))
     },
+    //商品全选时候的方法
     goodsAllSelect(state, status) {
       state.car.forEach(item => {
         item.selected = status.status
-        // console.log('1111')
       })
     },
     //添加搜索信息方法
@@ -164,13 +144,11 @@ const store = new Vuex.Store({
     }
   },
   getters: {
+    //获取分类列表的数据的方法
     tabList: (state) => {
       return state.itemObj
     },
-    // optCount(state){
-    //   return "当前的count值" + state.count
-    // },
-    //计算所有的数量
+    //计算所有的数量的方法
     getAllCount(state) {
       var c = 0;
       state.car.forEach(item => {
@@ -178,7 +156,7 @@ const store = new Vuex.Store({
       })
       return c == 0 ? null : c
     },
-    //获取商品id和数量
+    //获取商品id和数量的方法
     getGoodsCount(state) {
       var o = {}
       //把商品遍历存储到o对象中
@@ -194,7 +172,6 @@ const store = new Vuex.Store({
         //以商品id为key把状态存到o对象中
         o[item.id] = item.selected
       })
-      // console.log(o)
       return o
     },
     //定义计算总价的方法

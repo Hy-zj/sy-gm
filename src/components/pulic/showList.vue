@@ -1,8 +1,9 @@
 <template>
+<!-- 搜索弹出页面 -->
   <div>
     <div class="showList">
       <ul>
-        <li v-for="item in shopName" :key="item.id">
+        <li v-for="item in showShopList" :key="item.id">
           <router-link :to="{path: '/searchList', query: {name: item.name}}">
             <div>
               <span class="showList-title">{{item.name}}</span>
@@ -20,6 +21,7 @@ export default {
   name: "showList",
   data() {
     return {
+      showShopList: [],
       shopName: [
         {
           id: "001",
@@ -58,6 +60,18 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    filterdata(){
+      this.shopName.some(item=>{
+        if (item.name.includes(this.$store.state.message)) {
+          this.showShopList.push(item)
+        }
+      })
+    }
+  },
+  mounted(){
+    this.filterdata()
   }
 };
 </script>

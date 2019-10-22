@@ -1,4 +1,5 @@
 <template>
+<!-- 商品信息底部tab选项卡 -->
   <div>
     <div class="product_tab_title">
       <div class="left" @click="changeShowTab(0)" :class="{tab_active:pageIndex==0}">商品介绍</div>

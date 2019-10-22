@@ -1,4 +1,5 @@
 <template>
+<!-- 首页浮动图片 -->
   <div>
     <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201910/11/sale948NFRPy9Xn.html">
       <div class="home-float">
