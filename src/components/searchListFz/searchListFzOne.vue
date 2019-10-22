@@ -44,8 +44,8 @@ export default {
   //   searchText() {
   //     console.log(typeof this.$store.state.searchoneList);
   //     return typeof this.$store.state.searchoneList === "object" &&
-  //       this.$store.state.searchoneList.length > 0
-  //       ? this.$store.state.searchoneList[
+  //       this.$store.state.searchoneList.length > 0?
+  //        this.$store.state.searchoneList[
   //           this.$store.state.searchoneList.length - 1
   //         ]
   //       : null;
@@ -86,13 +86,18 @@ export default {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
 }
 .searchListone-title {
   width: 100%;
-  height: 60px;
+  height: 80px;
   flex-wrap: wrap;
   color: #666;
   margin-top: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .searchListone-desc {
   width: 100%;

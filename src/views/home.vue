@@ -83,20 +83,30 @@ export default {
     },
     scrollFunc(e) {
       let h = document.documentElement.scrollTop;
+      let num = document.querySelector(".gg-header");
+      let bum = document.querySelector(".home_fixed");
+      let aum = document.querySelector(".home_swi");
       if (this.show) {
         if (h >= 60) {
+          if (num && bum && aum) {
+            document.querySelector(".gg-header").style.top = "-60px";
+            document.querySelector(".home_fixed").style.top = "0px";
+            document.querySelector(".home_swi").style.marginTop = "44px";
+          }
+        } else {
+          if (num && bum && aum) {
+            document.querySelector(".gg-header").style.top = `-${h}px`;
+            document.querySelector(".home_fixed").style.top = 60 - h + "px";
+            document.querySelector(".home_swi").style.marginTop =
+              104 - h + "px";
+          }
+        }
+      } else {
+        if (num && bum && aum) {
           document.querySelector(".gg-header").style.top = "-60px";
           document.querySelector(".home_fixed").style.top = "0px";
           document.querySelector(".home_swi").style.marginTop = "44px";
-        }else{
-          document.querySelector(".gg-header").style.top = `-${h}px`;
-          document.querySelector(".home_fixed").style.top = 60-h+"px";
-          document.querySelector(".home_swi").style.marginTop = 104-h+"px";
         }
-      }else{
-        document.querySelector(".gg-header").style.top = "-60px";
-          document.querySelector(".home_fixed").style.top = "0px";
-          document.querySelector(".home_swi").style.marginTop = "44px";
       }
     }
   }

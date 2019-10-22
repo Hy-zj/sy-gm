@@ -3,276 +3,305 @@
   "data": {
     "message": [
       {
-        "id": "001",
+        "id": "a",
         "title": "华为手机",
         "shop": [
-          {
-            "id": "1",
-            "price": "1599",
+          { 
+            "name": "华为手机",
+            "id": "001",
+            "price": "2699",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1PsDXByV_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/66195/11/8532/101320/5d664bc3Eb6fb6a07/b48b285edbbeb479.jpg!q70.jpg",
             "count": 1,
-            "desc": "华为手机Mate30(TAS-AL00) 6GB+128GB 全网通 双卡双待 亮黑"
+            "desc": "华为nova5pro 手机（白条6期免息0首付+4色现货当天发+30天价保） 绮境森林 8GB+128GB全网通"
           },
-          {
-            "id": "2",
-            "price": "1599",
+          { 
+            "name": "华为手机",
+            "id": "002",
+            "price": "1500",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1PsDXByV_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/67870/7/13409/416682/5dac1770Ec347fcd5/686cd05c0ce1f8b3.jpg!q70.jpg",
             "count": 3,
-            "desc": "华为手机Mate30(TAS-AL00) 6GB+128GB 全网通 双卡双待 亮黑"
+            "desc": "华为 HUAWEI nova 5z 麒麟810芯片 4800万AI四摄 3200万人像超级夜景  6GB+64GB 幻夜黑 全网通双卡双待"
           },
-          {
-            "id": "4",
-            "price": "1599",
+          { 
+            "name": "华为手机",
+            "id": "003",
+            "price": "1350",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1PsDXByV_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/81621/11/13285/468711/5da8527aEbd07c77a/62f32db5b6606ee2.jpg!q70.jpg",
             "count": 1,
-            "desc": "华为手机Mate30(TAS-AL00) 6GB+128GB 全网通 双卡双待 亮黑"
+            "desc": "华为（HUAWEI） 华为畅享10"
           },
-          {
-            "id": "5",
-            "price": "1599",
+          { 
+            "name": "华为手机",
+            "id": "004",
+            "price": "2499",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1PsDXByV_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/35493/30/14545/210121/5d280052E1187c175/e9ad9735fc3f0686.jpg!q70.jpg",
             "count": 1,
-            "desc": "华为手机Mate30(TAS-AL00) 6GB+128GB 全网通 双卡双待 亮黑"
+            "desc": "【超级爆品】荣耀20 李现同款 4800万超广角AI四摄 3200W美颜自拍 麒麟Kirin980全网通版8GB+128GB 蓝水翡翠"
           }
         ]
       },
       {
-        "id": "002",
+        "id": "b",
         "title": "小米手机",
         "shop": [
-          {
-            "id": "6",
-            "price": "1499",
+          { 
+            "name": "小米手机",
+            "id": "005",
+            "price": "1599",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1ZpYsB4E_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/66991/40/8602/92821/5d6743d0Ed0eec544/f1b6954d52a2ff66.jpg!q70.jpg",
             "count": 1,
-            "desc": "小米手机 红米6pro 黑色(黑色)(黑色)"
+            "desc": "【新品抢购】Redmi Note8Pro 6400万全场景四摄 液冷游戏芯 4500mAh长续航 NFC 18W快充 红外遥控 6GB+128GB 冰翡翠 游戏智能手机 小米 红米"
           },
-          {
-            "id": "7",
+          { 
+            "name": "小米手机",
+            "id": "006",
             "price": "1499",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1ZpYsB4E_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/93499/17/90/221850/5da6d4ebE9747a490/8b167328e1dadff8.jpg!q70.jpg",
             "count": 1,
-            "desc": "小米手机 红米6pro 黑色(黑色)(黑色)"
+            "desc": "小米（MI） Redmi 8A"
           },
-          {
-            "id": "8",
-            "price": "1499",
+          { 
+            "name": "小米手机",
+            "id": "007",
+            "price": "799",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1ZpYsB4E_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/104531/39/16/244057/5da59f1bE0579ba4b/7ae551c2fc6d18bd.jpg!q70.jpg",
             "count": 1,
-            "desc": "小米手机 红米6pro 黑色(黑色)(黑色)"
+            "desc": "【新品抢购】Redmi 8 5000mAh大电量 大字体大音量大内存 3D四曲面机身 AI双摄 骁龙八核处理器 AI人脸解锁 3GB+32GB 仙踪绿 游戏智能手机 小米 红米"
           },
-          {
-            "id": "9",
-            "price": "1499",
+          { 
+            "name": "小米手机",
+            "id": "008",
+            "price": "999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T1ZpYsB4E_1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/n2/s240x240_jfs/t1/65786/38/8555/351173/5d674913E0a3b51f6/8d2e3fadc4cfac3c.jpg!q70.jpg",
             "count": 1,
-            "desc": "小米手机 红米6pro 黑色(黑色)(黑色)"
+            "desc": "小米（MI） Redmi Note8"
           }
         ]
       },
       {
-        "id": "003",
+        "id": "c",
         "title": "苹果手机",
         "shop": [
-          {
-            "id": "10",
-            "price": "1299",
+          { 
+            "name": "苹果手机",
+            "id": "009",
+            "price": "5439",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/73561/7/10120/89811/5d7a0b44Edd7777e1/a75f834d96c574f8.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "Apple iPhone 11 苹果11 手机 移动联通电信4G手机 黑色 全网通64G"
           },
-          {
-            "id": "11",
-            "price": "1299",
+          { 
+            "name": "苹果手机",
+            "id": "010",
+            "price": "4999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/3405/18/3537/69901/5b997c0aE5dc8ed9f/a2c208410ae84d1f.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "Apple iPhone XR"
           },
-          {
-            "id": "12",
-            "price": "1299",
+          { 
+            "name": "苹果手机",
+            "id": "011",
+            "price": "3499",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/18387/1/12727/161720/5c999df4E06720614/34ac75cc458efc46.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "Apple iPhone7 Plus"
           },
-          {
-            "id": "13",
-            "price": "1299",
+          { 
+            "name": "苹果手机",
+            "id": "012",
+            "price": "4299",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/mobilecms/s316x316_jfs/t7582/66/3048380492/71753/acde79b5/59b85824N836bb714.jpg!q70.dpg.webp",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "Apple iPhone 8 Plus"
           }
         ]
       },
       {
-        "id": "004",
+        "id": "d",
         "title": "锤子手机",
         "shop": [
-          {
-            "id": "14",
-            "price": "1299",
+          { 
+            "name": "锤子手机",
+            "id": "013",
+            "price": "1999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img14.360buyimg.com/n2/s240x240_jfs/t20590/168/1022571101/210070/112e444f/5b1de1feNb14d8f47.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "锤子（smartisan） 坚果 R1 6G+128GB 碳黑色 全面屏双摄  全网通4G手机 双卡双待  游戏手机"
           },
-          {
-            "id": "15",
-            "price": "1299",
+          { 
+            "name": "锤子手机",
+            "id": "014",
+            "price": "978",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img13.360buyimg.com/mobilecms/s316x316_jfs/t1/24450/9/4170/60978/5c2efc26Eb0af69d7/b2063dd5873194f9.jpg!q70.dpg.webp",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【二手9成新】锤子（smartisan） 坚果Pro2s手机 锤子手机 全网通 4G 二手手机 炫蓝色 64G  "
           },
-          {
-            "id": "16",
-            "price": "1299",
+          { 
+            "name": "锤子手机",
+            "id": "015",
+            "price": "1699",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img14.360buyimg.com/mobilecms/s316x316_jfs/t1/17476/34/5701/99561/5c413d8eE9dd82f23/7444a4e3498b61ea.jpg!q70.dpg.webp",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【二手9成新】锤子 坚果R1 二手手机 白色 全网通 6G+128G  "
           },
-          {
-            "id": "17",
-            "price": "1299",
+          { 
+            "name": "锤子手机",
+            "id": "016",
+            "price": "499",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/mobilecms/s316x316_jfs/t1/20863/3/12050/54764/5c94890bE16301d93/2acf917af3355028.jpg!q70.dpg.webp",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【二手9成新】锤子（smartisan）M1L M1L 5.5寸 白色 全网通 6G+64G  "
           }
         ]
       },
       {
-        "id": "005",
+        "id": "e",
         "title": "一加手机",
         "shop": [
-          {
-            "id": "18",
-            "price": "1299",
+          { 
+            "name": "一加手机",
+            "id": "017",
+            "price": "3199",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/51433/10/13549/219271/5da579caE463ba0cc/1ef00a067fe76605.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【超级爆品】一加 OnePlus 7T 90Hz流体屏 骁龙855Plus旗舰 4800万超广角三摄  8GB+256GB 冰际蓝 全面屏拍照游戏手机"
           },
-          {
-            "id": "19",
-            "price": "1299",
+          { 
+            "name": "一加手机",
+            "id": "018",
+            "price": "4599",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/88963/12/6/220068/5da56719E1a731237/15a4e526fd8b54c0.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【超级爆品】一加 OnePlus 7T Pro 2K+90Hz流体屏 骁龙855Plus旗舰 4800万超广角三摄 8GB+256GB 海月蓝 游戏手机"
           },
-          {
-            "id": "20",
-            "price": "1299",
+          { 
+            "name": "一加手机",
+            "id": "019",
+            "price": "2799",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/35032/13/9593/102096/5cf0c2ccE77dc890e/abde5c9a60044485.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "一加 7"
           },
-          {
-            "id": "21",
-            "price": "1299",
+          { 
+            "name": "一加手机",
+            "id": "020",
+            "price": "4299",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img13.360buyimg.com/n2/s240x240_jfs/t1/40586/1/11155/200870/5d49255fEa7738b29/b3e5895230af9915.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "一加 7 Pro"
           }
         ]
       },
       {
-        "id": "006",
+        "id": "f",
         "title": "魅蓝手机",
         "shop": [
-          {
-            "id": "22",
-            "price": "1299",
+          { 
+            "name": "魅蓝手机",
+            "id": "021",
+            "price": "2999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/72496/35/8131/152014/5d5f7889Ed1d68bf9/48cb7fecbd7ae71e.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "魅族 16s Pro 骁龙855plus 全面屏拍照游戏手机 8GB+128GB 黑之谧镜 全网通移动联通电信4G手机 双卡双待"
           },
-          {
-            "id": "23",
-            "price": "1299",
+          { 
+            "name": "魅蓝手机",
+            "id": "022",
+            "price": "566",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/n2/s240x240_jfs/t1/45957/10/13218/147706/5da2aedaEcc1dd084/889801865241dff5.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "魅族（MEIZU） 魅蓝 S6 全面屏手机 磨砂黑 全网通(3G+64G)"
           },
-          {
-            "id": "24",
-            "price": "1299",
+          { 
+            "name": "魅蓝手机",
+            "id": "023",
+            "price": "763",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/n2/s240x240_jfs/t26779/250/2680739985/625924/b91b8a88/5cd8c782N785c4077.png",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "魅族（MEIZU） 魅族Note8 手机 魅蓝升级 曜黑 全网通 4GB+64GB"
           },
-          {
-            "id": "25",
-            "price": "1299",
+          { 
+            "name": "魅蓝手机",
+            "id": "024",
+            "price": "569",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/n2/s240x240_jfs/t11011/13/2827979512/719727/150f7616/5cda1a06N99a035aa.png",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "魅族（MEIZU） 魅族S6 魅蓝S6 全面屏手机 磨砂黑 全网通(3GB+64GB)"
           }
         ]
       },
       {
-        "id": "007",
+        "id": "g",
         "title": "红米手机",
         "shop": [
-          {
-            "id": "26",
-            "price": "1299",
+          { 
+            "name": "红米手机",
+            "id": "025",
+            "price": "999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/40642/20/13344/461165/5d6748f1E4490c921/8af64bdb7bd8fd33.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【新品抢购】Redmi Note8 4800万全场景四摄 4000mAh长续航 高通骁龙665 18W快充 小金刚品质保证 4GB+64GB 梦幻蓝 游戏智能手机 小米 红米"
           },
-          {
-            "id": "27",
-            "price": "1299",
+          { 
+            "name": "红米手机",
+            "id": "026",
+            "price": "699",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/n2/s240x240_jfs/t1/93499/17/90/221850/5da6d4ebE9747a490/8b167328e1dadff8.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "小米（MI） Redmi 8A"
           },
-          {
-            "id": "28",
-            "price": "1299",
+          { 
+            "name": "红米手机",
+            "id": "027",
+            "price": "799",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img10.360buyimg.com/n2/s240x240_jfs/t1/104531/39/16/244057/5da59f1bE0579ba4b/7ae551c2fc6d18bd.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "【新品抢购】Redmi 8 5000mAh大电量 大字体大音量大内存 3D四曲面机身 AI双摄 骁龙八核处理器 AI人脸解锁 3GB+32GB 仙踪绿 游戏智能手机 小米 红米"
           },
-          {
-            "id": "29",
-            "price": "1299",
+          { 
+            "name": "红米手机",
+            "id": "028",
+            "price": "999",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img11.360buyimg.com/n2/s240x240_jfs/t1/65786/38/8555/351173/5d674913E0a3b51f6/8d2e3fadc4cfac3c.jpg!q70.jpg",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "小米（MI） Redmi Note8"
           },
-          {
-            "id": "30",
-            "price": "1299",
+          { 
+            "name": "红米手机",
+            "id": "029",
+            "price": "1599",
             "selected": false,
-            "imgurl": "//gfs17.gomein.net.cn/T131DXBCAT1RCvBVdK_400.jpg?v=20170727",
+            "imgurl": "//img12.360buyimg.com/mobilecms/s316x316_jfs/t1/83202/24/524/298511/5cebc5cdE5f4759ac/4567583f90977277.jpg!q70.dpg.webp",
             "count": 1,
-            "desc": "Apple iPhone 11 Pro 64G 银色 移动联通电信4G手机"
+            "desc": "小米（MI） Redmi Note8 Pro"
           }
         ]
       }

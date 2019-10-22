@@ -43,10 +43,11 @@ const store = new Vuex.Store({
         response.data.data.message.some(item=>{
           // console.log(item.title)
           // console.log(state)
-          console.log(localStorage.getItem('searchoneList'))
-          if (item.title.includes(localStorage.getItem('searchoneList'))) {
+          // let num = localStorage.getItem('searchoneList')
+          // console.log(num)
+          if (item.title.includes(state.searchoneList[state.searchoneList.length-1])) {
             state.itemList = item.shop
-            console.log(localStorage)
+            // console.log(localStorage)
           }
         })
         // console.log(response.data.data.message)
@@ -145,7 +146,7 @@ const store = new Vuex.Store({
     //添加搜索信息方法
     runGo(state) {
       state.searchoneList.push(state.message)
-      localStorage.setItem('searchoneList', state.searchoneList)
+      localStorage.setItem('searchoneList',state.searchoneList)
     },
     //清楚搜索框信息
     delShop(state) {

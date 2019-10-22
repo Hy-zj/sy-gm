@@ -51,7 +51,7 @@
                   </div>
                   <div class="cartXq-main-shop-list-top-right-right">
                     <div class="cartXq-main-shop-list-top-right-right-one">{{item.desc}}</div>
-                    <div class="cartXq-main-shop-list-top-right-right-two">{{item.title}}</div>
+                    <div class="cartXq-main-shop-list-top-right-right-two">{{item.name}}</div>
                     <div class="cartXq-main-shop-list-top-right-right-tree">限购99件</div>
                     <div class="cartXq-main-shop-list-top-right-right-four">
                       <span class="cartXq-main-shop-list-top-right-right-four-left">￥{{item.price}}</span>
