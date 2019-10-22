@@ -9,35 +9,56 @@
             <div class="searchone-icon-main-one" v-else>店铺</div>
             <div class="searchone-icon-main-tree" @click="change"></div>
           </div>
-          <input type="text" placeholder="冰箱洗衣机套购7.5折起" v-model="$store.state.message" @mousedown="changeone" @keyup.enter="tiaozhuan()"/>
-         <div class="searchone-icon"> <a href="https://prom.m.gome.com.cn/html/prodhtml/topics/201710/12/salerxYredi657e.html?from=1"><van-icon name="search" /></a></div>
+          <input
+            type="text"
+            placeholder="冰箱洗衣机套购7.5折起"
+            v-model="$store.state.message"
+            @mousedown="changeone"
+            @keyup.enter="tiaozhuan()"
+            @input="changelist"
+          />
+          <div class="searchone-icon">
+            <a
+              href="https://prom.m.gome.com.cn/html/prodhtml/topics/201710/12/salerxYredi657e.html?from=1"
+            >
+              <van-icon name="search" />
+            </a>
+          </div>
         </div>
       </div>
-      <div class="searchone-nav">热词搜索</div>
-      <div class="searchone-main">
-        <div class="searchone-main-item">iphone 11</div>
-        <div class="searchone-main-item">香肠派队</div>
-        <div class="searchone-main-item">苹果手机</div>
-        <div class="searchone-main-item">空调</div>
-        <div class="searchone-main-item">冰箱</div>
-        <div class="searchone-main-item">海尔洗衣机</div>
-        <div class="searchone-main-item">华为手机</div>
-        <div class="searchone-main-item">小米电视</div>
-      </div>
-      <div class="searchone-footer">
-        <ul>
-          <li>搜索历史</li>
-          <li v-for="item in $store.state.searchoneList" :key="item.id">{{item}}</li>
-        </ul>
-        <div class="searchone-footer-del"><span @click="del">清空历史记录</span></div>
+      <div>
+        <showList v-if="msg"></showList>
+        <div v-else>
+          <div class="searchone-nav">热词搜索</div>
+          <div class="searchone-main">
+            <div class="searchone-main-item">iphone 11</div>
+            <div class="searchone-main-item">香肠派队</div>
+            <div class="searchone-main-item">苹果手机</div>
+            <div class="searchone-main-item">空调</div>
+            <div class="searchone-main-item">冰箱</div>
+            <div class="searchone-main-item">海尔洗衣机</div>
+            <div class="searchone-main-item">华为手机</div>
+            <div class="searchone-main-item">小米电视</div>
+          </div>
+          <div class="searchone-footer">
+            <ul>
+              <li>搜索历史</li>
+              <li v-for="item in $store.state.searchoneList" :key="item.id">{{item}}</li>
+            </ul>
+            <div class="searchone-footer-del">
+              <span @click="del">清空历史记录</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import { Icon } from 'vant';
+import Vue from "vue";
+import { Icon } from "vant";
+import showList from "../components/pulic/showList";
 
 Vue.use(Icon);
 export default {
@@ -47,27 +68,38 @@ export default {
       show: true,
       // searchoneList:　[],
       // message : ""
-    }
+      msg: false
+    };
+  },
+  components: {
+    showList
   },
   methods: {
-    change () {
-      this.show = !this.show 
+    change() {
+      this.show = !this.show;
     },
-    del () {
-      this.$store.commit('delOver')
+    del() {
+      this.$store.commit("delOver");
     },
-    changeone () {
-      document.querySelector('input').placeholder = ""
+    changeone() {
+      document.querySelector("input").placeholder = "";
     },
-    tiaozhuan () {
+    changelist() {
+      if (this.$store.state.message.length > 0) {
+        this.msg = true;
+      } else {
+        this.msg = false;
+      }
+    },
+    tiaozhuan() {
       // this.$router.push("/home")
       // this.searchoneList.push(this.message)
-      this.$store.commit('runGo')
-      this.$store.commit('delShop')
-      this.$router.push("/searchList")
+      this.$store.commit("runGo");
+      this.$store.commit("delShop");
+      this.$router.push("/searchList");
     },
-    backHome () {
-      this.$router.back()
+    backHome() {
+      this.$router.back();
     }
   }
 };
@@ -138,12 +170,12 @@ export default {
   width: 100%;
   height: 100%;
 }
-.searchone-footer ul{
+.searchone-footer ul {
   width: 100%;
   height: 100%;
   list-style: none;
 }
-.searchone-footer ul li{
+.searchone-footer ul li {
   width: 100%;
   line-height: 48px;
   color: #333;
@@ -152,7 +184,7 @@ export default {
   padding-left: 20px;
   border-radius: 0;
 }
-.searchone-footer-del{
+.searchone-footer-del {
   width: 100%;
   height: 48px;
   display: flex;
@@ -160,7 +192,7 @@ export default {
   align-items: center;
   margin: 15px 0;
 }
-.searchone-footer-del span{
+.searchone-footer-del span {
   width: 224px;
   line-height: 36px;
   border-radius: 15px;
@@ -168,12 +200,12 @@ export default {
   color: #666;
   text-align: center;
 }
-.searchone-icon{
+.searchone-icon {
   position: fixed;
   top: 18px;
   right: 25px;
 }
-.searchone-icon-main{
+.searchone-icon-main {
   width: 65px;
   height: 25px;
   position: fixed;
@@ -184,8 +216,8 @@ export default {
   color: #ccc;
   display: flex;
 }
-.searchone-icon-main-one{
-   width: 45px;
+.searchone-icon-main-one {
+  width: 45px;
   height: 25px;
   position: fixed;
   top: 18px;
@@ -195,14 +227,14 @@ export default {
   color: red;
   display: flex;
 }
-.searchone-icon-main-tree{
-   width: 0;
+.searchone-icon-main-tree {
+  width: 0;
   height: 0;
   position: fixed;
   top: 24px;
   left: 35%;
   z-index: 10;
   border: 8px solid #f8f8f8;
-  border-top: 8px solid red; 
+  border-top: 8px solid red;
 }
 </style>

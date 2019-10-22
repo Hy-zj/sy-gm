@@ -73,6 +73,7 @@ export default {
   height: 120px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .searchListone-footer-item-left {
   width: 120px;
