@@ -49,8 +49,15 @@ export default {
 }
 .stapers button {
   width: 20px;
+  border: none;
+  background: #f2f2f2;
 }
 .stapers input {
   width: 30px;
+  border: none;
+  border-radius: 0;
+  height: 30px;
+  background: white;
+  color: #666;
 }
 </style>

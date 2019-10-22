@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="list_topSearch_header" v-if="msg">
-      <router-link to="/search">
+      <router-link to="/home">
         <van-icon name="arrow-left" class="arrow-left"></van-icon>
       </router-link>
       <input

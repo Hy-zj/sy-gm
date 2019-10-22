@@ -43,7 +43,11 @@
           <div class="searchone-footer">
             <ul>
               <li>搜索历史</li>
-              <li v-for="item in $store.state.searchoneList" :key="item.id">{{item}}</li>
+              <li v-for="item in $store.state.searchoneList" :key="item.id">
+                <router-link :to="{path: '/searchList', query: {name: item}}">
+                  {{item}}
+                </router-link>
+              </li>
             </ul>
             <div class="searchone-footer-del">
               <span @click="del">清空历史记录</span>
@@ -183,6 +187,9 @@ export default {
   display: flex;
   padding-left: 20px;
   border-radius: 0;
+}
+.searchone-footer ul li a{
+  color: #333;
 }
 .searchone-footer-del {
   width: 100%;
