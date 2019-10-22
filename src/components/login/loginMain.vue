@@ -30,7 +30,7 @@
           <img src="//app.gomein.net.cn/plus/images/ucenter/dingdan.png?v=2017092001" alt />
         </div>
         <p class="loginMain-one-desc">全部订单</p>
-        <p class="loginMain-one-ico">查看电子发票</p>
+        <p class="loginMain-one-ico">电子发票</p>
       </div>
     </div>
   </div>

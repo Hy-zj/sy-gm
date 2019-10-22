@@ -210,14 +210,11 @@ export default {
   border-bottom: 1px solid #dedede;
 }
 .my-account_login input {
-  /* outline: none; */
   border: none;
   width: 90%;
   color: #666;
   font-size: 15px;
-  /* border: 1px solid #ccc; */
   background: white;
-  border-radius: 0;
 }
 .my-icon_user {
   display: block;
@@ -300,11 +297,10 @@ export default {
   outline: none;
   border: none;
   width: 90%;
-  color: #dedede;
+  color: #666;
   font-size: 15px;
   text-align: left;
-  
-  /* margin-left: 8px; */
+  background-color: #fff;
 }
 .my-message_login .my-icon_msg {
   display: block;

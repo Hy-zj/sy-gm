@@ -31,8 +31,7 @@
         </a>
       </div>
     </div>
-    <div class="searchList-main">
-      <div class="searchList-main-nav" v-if="msg">
+    <div class="searchList-main-nav" v-if="msg">
         <div class="searchList-main-nav-one">
           <van-dropdown-menu>
             <van-dropdown-item v-model="value1" :options="option1" />
@@ -51,7 +50,6 @@
           ref="headertwo"
         >团抢商品</div>
         <div class="searchList-main-header-tree">全部</div>
-      </div>
     </div>
     <component :item="$store.state.itemList" v-bind:is="currentTabComponent"></component>
   </div>
@@ -98,7 +96,7 @@ export default {
       this.tab = !this.tab;
     },
     backHome(val) {
-      this.$router.push({path: "/search", query: {name: val}});
+      this.$router.push({ path: "/search", query: { name: val } });
     },
     //动态组件跳转
     gmtwo() {
@@ -111,23 +109,20 @@ export default {
       this.currentTabComponent = "searchListFzTree";
     },
     scrollToTop() {
-      const that = this;
+      // const that = this;
       let scrollTop = window.pageYOffset;
-      that.scrollTop = scrollTop;
-      if (that.scrollTop > 85) {
-        var NUM = document.querySelector(".searchList-main-header");
+      // that.scrollTop = scrollTop;
+      let NUM = document.querySelector(".searchList-main-header");
+      if (scrollTop > 85) {
         if (NUM) {
-          document.querySelector(".searchList-main-header").style.position =
-            "fixed";
-          document.querySelector(".searchList-main-header").style.top = 0;
+          NUM.style.position = "fixed";
+          NUM.style.top = 0;
         }
       }
-      if (that.scrollTop == 0) {
-        var NUM = document.querySelector(".searchList-main-header");
+      if (scrollTop == 0) {
         if (NUM) {
-          document.querySelector(".searchList-main-header").style.position =
-            "static";
-          document.querySelector(".searchList-main-header").style.top = 0;
+          NUM.style.position = "static";
+          NUM.style.top = 0;
         }
       }
     },
@@ -221,10 +216,7 @@ img {
   width: 100%;
   height: 100%;
 }
-.searchList-main {
-  width: 100%;
-  height: 100px;
-}
+
 .searchList-main-nav {
   width: 100%;
   height: 50px;

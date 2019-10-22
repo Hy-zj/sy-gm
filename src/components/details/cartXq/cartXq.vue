@@ -193,7 +193,6 @@ export default {
     },
     //定义单选事件
     selectedChanged(id, val) {
-      console.log(val);
       val = !val;
       this.$store.commit("updataGoodsSelected", {
         id,
