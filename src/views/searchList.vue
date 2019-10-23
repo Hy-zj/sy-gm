@@ -51,7 +51,7 @@
         >团抢商品</div>
         <div class="searchList-main-header-tree">全部</div>
     </div>
-    <component :item="$store.state.itemList" v-bind:is="currentTabComponent"></component>
+    <component :item="$store.state.itemList" v-bind:is="currentTabComponent" id="com"></component>
   </div>
 </template>
 
@@ -110,10 +110,12 @@ export default {
     scrollToTop() {
       let scrollTop = window.pageYOffset;
       let NUM = document.querySelector(".searchList-main-header");
+      let com=document.querySelector('#com')
       if (scrollTop > 85) {
         if (NUM) {
           NUM.style.position = "fixed";
           NUM.style.top = 0;
+          com.style.marginTop="20px"
         }
       }
       if (scrollTop == 0) {
