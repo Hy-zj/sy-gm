@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="list_topSearch_header" v-if="msg">
+    <div class="list_topSearch_header">
       <router-link to="/home">
         <van-icon name="arrow-left" class="arrow-left"></van-icon>
       </router-link>
@@ -16,7 +16,7 @@
       />
       <DropDownTab v-show="tab"></DropDownTab>
     </div>
-    <div class="searchList-nav" v-if="msg">
+    <div class="searchList-nav" >
       <div class="searchList-nav-one">
         <img src="//gfs13.gomein.net.cn/T1xLEbBTZT1RCvBVdK.jpg" alt />
       </div>
@@ -31,7 +31,7 @@
         </a>
       </div>
     </div>
-    <div class="searchList-main-nav" v-if="msg">
+    <div class="searchList-main-nav" >
         <div class="searchList-main-nav-one">
           <van-dropdown-menu>
             <van-dropdown-item v-model="value1" :options="option1" />
@@ -73,7 +73,6 @@ export default {
   data() {
     return {
       tab: false,
-      msg: true,
       msglog: false,
       msglog1: false,
       value1: 0,
@@ -109,9 +108,7 @@ export default {
       this.currentTabComponent = "searchListFzTree";
     },
     scrollToTop() {
-      // const that = this;
       let scrollTop = window.pageYOffset;
-      // that.scrollTop = scrollTop;
       let NUM = document.querySelector(".searchList-main-header");
       if (scrollTop > 85) {
         if (NUM) {
@@ -122,7 +119,6 @@ export default {
       if (scrollTop == 0) {
         if (NUM) {
           NUM.style.position = "static";
-          NUM.style.top = 0;
         }
       }
     },

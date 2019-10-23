@@ -113,8 +113,6 @@ export default {
         this.$store.state.loginObj.password
       ) {
         this.$router.push("/loginMy");
-        (this.$store.state.loginObj.name = ""),
-          (this.$store.state.loginObj.password = "");
       }
     },
     seenEvent() {
